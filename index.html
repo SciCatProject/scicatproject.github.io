@@ -8,13 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>SciCat Project - Data Management</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -28,8 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
+        <a class="navbar-brand" href="#">SciCat Project - Data Acquisition, Management and Publication</a>
       </div>
     </nav>
 
@@ -39,19 +38,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-                </div>
-                <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-                </div>
-              </div>
-            </form>
+            <h1 class="mb-5">Manage your data acquisition pipeline and publish as open data!</h1>
           </div>
         </div>
       </div>
@@ -66,8 +53,8 @@
               <div class="features-icons-icon d-flex">
                 <i class="icon-screen-desktop m-auto text-primary"></i>
               </div>
-              <h3>Fully Responsive</h3>
-              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+              <h3>Responsive Frontend</h3>
+              <p class="lead mb-0">Angular based web interface to allow access to data, as well as provide administrative functions</p>
             </div>
           </div>
           <div class="col-lg-4">
@@ -75,8 +62,8 @@
               <div class="features-icons-icon d-flex">
                 <i class="icon-layers m-auto text-primary"></i>
               </div>
-              <h3>Bootstrap 4 Ready</h3>
-              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+              <h3>Configure Your API</h3>
+              <p class="lead mb-0">Using the Loopback framework, built on top of Node.JS, your models are defined in JSON and a RESTful API is auto generated. Extend at your leisure with JavaScript. </p>
             </div>
           </div>
           <div class="col-lg-4">
@@ -84,8 +71,8 @@
               <div class="features-icons-icon d-flex">
                 <i class="icon-check m-auto text-primary"></i>
               </div>
-              <h3>Easy to Use</h3>
-              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+              <h3>Flexible Storage and Ingestion</h3>
+              <p class="lead mb-0">Configured for MongoDB (with support for relational databases) and allowing ingestion via the API or a number of clients</p>
             </div>
           </div>
         </div>
@@ -99,76 +86,52 @@
 
           <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Fully Responsive Design</h2>
-            <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            <h2>Cutting Edge Technologies</h2>
+            <p class="lead mb-0">Using Angular, NodeJS and MongoDB to allow a flexible but reliable way to store, manage, and publish data</p>
           </div>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
           <div class="col-lg-6 my-auto showcase-text">
-            <h2>Updated For Bootstrap 4</h2>
-            <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            <h2>Open API, Easy Clients</h2>
+            <p class="lead mb-0">Using Swagger, the API is well documented and flexible. Clients can be generated with a single command for Python, JS, Java, Go and more</p>
           </div>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Easy to Use &amp; Customize</h2>
-            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+            <p class="lead mb-0">Most things can be customised within JSON or config files. Extend the models to suit your needs. Submit PRs on Github!</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Orgs -->
     <section class="testimonials text-center bg-light">
       <div class="container">
-        <h2 class="mb-5">What people are saying...</h2>
+        <h2 class="mb-5">Developed by: </h2>
         <div class="row">
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-              <h5>Margaret E.</h5>
-              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+              <img class="img-fluid rounded-circle mb-3" src="img/psi_logo.jpg" alt="">
+              <h5>Paul Scherrer Institut</h5>
+              <!-- <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p> -->
             </div>
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-              <h5>Fred S.</h5>
-              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+              <img class="img-fluid rounded-circle mb-3" src="img/ess_logo.png" alt="">
+              <h5>Europen Spallation Source</h5>
+              <!-- <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p> -->
             </div>
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-              <h5>Sarah	W.</h5>
-              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+              <img class="img-fluid rounded-circle mb-3" src="img/maxiv_logo.png" alt="">
+              <h5>Max IV</h5>
+              <!-- <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p> -->
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="call-to-action text-white text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-                </div>
-                <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -187,32 +150,24 @@
               <li class="list-inline-item">
                 <a href="#">Contact</a>
               </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
             </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; SciCat 2018. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                <a href="https://scicat.github.io/documentation">
+                  <i class="fas fa-book fa-2x fa-fw"></i>
                 </a>
               </li>
               <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                <a href="https://hub.docker.com/scicatproject">
+                  <i class="fab fa-docker fa-2x fa-fw"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                <a href="https://github.com/scicatproject">
+                  <i class="fab fa-github fa-2x fa-fw"></i>
                 </a>
               </li>
             </ul>
@@ -224,6 +179,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
   </body>
 
