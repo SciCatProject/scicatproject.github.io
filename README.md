@@ -1,4 +1,4 @@
-# Scictat Project Page
+# SciCat Project Page
 
 Edit the `index.html` directly.
 
