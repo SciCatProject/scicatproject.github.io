@@ -1,5 +1,7 @@
 # SciCat Project Page
 
+https://scicatproject.github.io
+
 Edit the `index.html` directly.
 
 Feel free to add content, contributors, info etc.
