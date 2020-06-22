@@ -10,4 +10,4 @@ Make sure images are in public domain.
 
 Code from: https://github.com/BlackrockDigital/startbootstrap-landing-page
 
-Run locally with `gulp dev`
+npm start
