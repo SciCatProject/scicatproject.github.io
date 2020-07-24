@@ -10,4 +10,6 @@ Make sure images are in public domain.
 
 Code from: https://github.com/BlackrockDigital/startbootstrap-landing-page
 
-npm start
+
+Run locally with `npm start`
+
