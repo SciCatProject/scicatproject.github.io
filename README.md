@@ -1,6 +1,6 @@
 # SciCat Project Page
 
-This page is based on the Start Bootstrap project, see below.
+This page is based on the "Start Bootstrap" project, see below.
 For changes simply edit the `index.html` directly. Make sure images are in public domain.
 Run locally with `npm start`
 
