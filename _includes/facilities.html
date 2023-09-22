@@ -1,2 +1,14 @@
---
---
+<section id="facilities" class="facilities text-center bg-light">
+ <div class="container">
+  <h1 class="my-5">Facilities</h1>
+  <div class="row">
+  {% for facility in site.facilities %}
+  <div class="col-lg-3 col-sm-6 facility mx-auto mb-5 mb-lg-0">
+   <a href="{{ facility.url }}">
+    <img class="img-fluid rounded-3 mb-3" src="{{ facility.image }}">
+    <h5>{{ facility.name }}</h5>
+  </a>
+ </div>
+ {% endfor %}
+  </div>
+</section>

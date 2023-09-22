@@ -1,0 +1,26 @@
+<section id="team" class="team text-center bg-light">
+ <div class="container">
+  <h1 class="my-5">Team</h1>
+  <div class="row">
+   {% for leader in site.team.leaders %}
+    <div class="leader col-lg-3 col-sm-6 mx-auto card">
+     <div class="leadership">{{ leader.role }}</div>
+     <div class="person">{{ leader.name }}</div>
+     {% if leader.company %}<div class="company">{{ leader.company }}</div> {% endif %}
+     {% if leader.email %}<div class="email">{{ leader.email }}</div> {% endif %}
+   </div>
+   {% endfor %}
+  </div>
+  <h2 class="my-6">Collaborators</h2>
+  <div class="row">
+   {% for collaborator in site.team.collaborators %}
+   <div class="collaborator col-lg-3 col-sm-6 mx-auto">
+    <div class="person">{{ collaborator.name }}</div>
+    {% if collaborator.company %}<div class="company">{{ collaborator.company }}</div> {% endif %}
+    {% if collaborator.email %}<div class="email">{{ collaborator.email }}</div> {% endif %}
+   </div>
+   {% endfor %}
+  </div>
+ </div>
+</section>
+

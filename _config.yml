@@ -26,6 +26,110 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+pill_1:
+  icon: fa-gears
+  title: Ingest
+  oneline: Automate data importing
+
+pill_2:
+  icon: fa-tag
+  title: Annotate
+  oneline: Enrich your data
+
+pill_3:
+  icon: fa-magnifying-glass
+  title: Find
+  oneline: Browse and search your data
+
+pill_4:
+  icon: fa-globe
+  title: Publish
+  oneline: Add DOI and share
+
+
+feature_1:
+  image: /assets/images/ball.jpg
+  title: FAIR data
+  text: SciCat is an important building block to implement a FAIR data managmement policy
+  attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Pixabay</a>)
+
+feature_2:
+  image: /assets/images/extend.jpg
+  title: Integrate, Extende, and Automate
+  text: Easily extend functionality through the OpenAPI REST. Automate connecting to message systems.  
+  attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Pixabay</a>)
+
+feature_3:
+  image: /assets/images/stack.jpg
+  title: Modern Technology Stack
+  text: Built on Node.js, Angular, Nest.Js and MongoBD
+  attribution: (Image by <a href="https://pixabay.com/users/ar130405-423602/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">ar130405</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">Pixabay</a>) 
+
+feature_4:
+  image: /assets/images/open.jpg
+  title: Open Source
+  text: Fully Open Source with a committed and welcoming team of developers.
+  attribution: (Photo by <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim Mossholder</a> on <a href="https://unsplash.com/s/photos/open-source?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>)
+
+facilities:
+  - image: /assets/images/ess_logo.png
+    url: https://www.ess.eu
+    name: European Spallation Source
+  - image: /assets/images/psi_logo.png
+    url: https://www.psi.ch
+    name: Paul Scherrer Institut
+  - image: /assets/images/maxiv_logo.png
+    url: https://www.maxiv.lu.se/
+    name: Max IV
+  - image: /assets/images/mlz_blue_rgb.png
+    url: https://mlz-garching.de/
+    name: Heinz Maier-Leibnitz Zentrum
+  - image: /assets/images/als_logo.png
+    url: https://als.lbl.gov/
+    name: Advanced Light Source
+  - image: /assets/images/desy_logo.png
+    url: https://www.desy.de/
+    name: Deutsches Elektronen-Synchrotron DESY
+  - image: /assets/images/soleil_logo.png
+    url: https://www.synchrotron-soleil.fr
+    name: Sychrotron SOLEIL
+
+
+team:
+  leaders:
+    - name: Max Novelli
+      company: European Spallation Source
+      email: max.novelli@ess.eu
+      role: Project Leader
+    - name: Daphne van Dijken
+      company: Max IV
+      email: 
+      role: Release 4.4 Leader
+    - name: Laura Shemilt
+      company: Rosalind Franklin Institute
+      email:
+      role: Documentation Leader
+  collaborators:
+    - name: Bjorn Pedersen
+      company: Heinz Maier-Leibnitz Zentrum
+      email:
+    - name: Carlo Minotti
+      company: Paul Scherrer Institut
+      email: 
+    - name: Dylan McReynolds
+      company: Advance Light Source
+      email:
+    - name: Javier Perez
+      company: Synchrotron SOLEIL
+      email: javier.perez@synchrotron-soleil.fr
+    - name: Majid Ounsy
+      company: Synchrotron SOLEIL
+      email: majid.ounsy@synchrotron-soleil.fr
+    - name: Patrick Madela
+      company: Synchrotron SOLEIL
+      email: patrick.madela@synchrotron-soleil.fr
+
+
 # Build settings
 theme: minima
 plugins:

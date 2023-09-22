@@ -16,9 +16,27 @@ main > div {
   overflow: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   text-align: center;
   font-weight: 700;
+}
+
+
+.navbar {
+  .navbar-brand {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .navbar-menu {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+  }
 }
 
 header.masthead {
@@ -51,3 +69,73 @@ header.masthead {
 
 }
 
+.pills-icons {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .pills-icons-item {
+    max-width: 20rem;
+
+    .pills-icons-icon {
+      height: 7rem;
+
+      i {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
+  .pills-icons-item:hover .pills-icons-icon i {
+    font-size: 5rem;
+  }
+
+}
+
+.features {
+  .features-item {
+    overflow: hidden;
+    position: relative;
+    
+    .features-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .features-content {
+      position: relative;
+      padding: 1rem;
+
+      .attribution {
+	position: absolute;
+	right: 1rem;
+	bottom: -0.9rem;
+	font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.facilities {
+  a {
+    text-decoration: none;
+    color: var(--bs-body-color); 
+  }
+}
+
+.team .leader {
+  .person {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .company {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+}
