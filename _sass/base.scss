@@ -23,6 +23,9 @@ h1, h2, h3, h4, h5 {
 
 
 .navbar {
+  .navbar-header {
+    height: 50px;
+  }
   .navbar-brand {
     position: absolute;
     top: 5px;
@@ -31,6 +34,15 @@ h1, h2, h3, h4, h5 {
   .navbar-menu {
     padding-left: 120px;
     padding-right: 120px;
+  }
+  @media (max-width: 991px) {
+    .navbar-menu {
+      padding: 5px 20px;
+      margin-top: 50px;
+    }
+    li {
+      text-align: center;
+    }
   }
   .navbar-toggler {
     position: absolute;
@@ -129,13 +141,98 @@ header.masthead {
   }
 }
 
-.team .leader {
-  .person {
+.team {
+  .leader {
+    .leadership {
+      font-size: 1.2rem;
+    }
+    .person {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .company {
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    .email {
+      font-size: 0.8rem;
+    }
+  }
+  .collaborator {
+    .person {
+      font-size: 1.3rem;
+    }
+    .company {
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    .email {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+aside.section-breaker {
+  height: 0.5rem;
+}
+
+
+.effort {
+  text-align: left;
+
+  .name {
     font-size: 1.5rem;
-    font-weight: 500;
   }
-  .company {
-    font-size: 0.9rem;
-    font-style: italic;
+
+  .effort-name {
+    border-bottom: 1px lightgray solid;
+    margin-bottom: 1rem;
   }
+
+  .effort-info {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px lightgray solid;
+    margin-bottom: 1rem;
+
+
+    .description {
+      text-align: left;
+    }
+    .link {
+      text-align: left;
+      a {
+        text-decoration: none;
+	color: black;
+	font-style: italic;
+      }
+    }
+  }
+
+  .leader-label {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    padding-right: 0.5rem;
+  }
+
+  .leader {
+    width: 50%;
+    text-align: left;
+    padding-left: 0.5rem;
+    display: inline-block;
+  }
+}
+
+section#resources {
+  .resource {
+    a {
+      text-decoration: none;
+      color: black;
+      font-style: italic;
+    }
+  }
+}
+
+div.container {
+  margin-bottom: 3rem;
 }

@@ -26,6 +26,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+version: 2.0
+last_update: 2023/10/02
+
 pill_1:
   icon: fa-gears
   title: Ingest
@@ -93,6 +96,9 @@ facilities:
   - image: /assets/images/soleil_logo.png
     url: https://www.synchrotron-soleil.fr
     name: Sychrotron SOLEIL
+  - image: /assets/images/daphne_logo.png
+    url: https://www.daphne4nfdi.de
+    name: DAta from PHoton and Neutron Experiments
 
 
 team:
@@ -128,6 +134,49 @@ team:
     - name: Patrick Madela
       company: Synchrotron SOLEIL
       email: patrick.madela@synchrotron-soleil.fr
+
+
+efforts:
+  - name: Release 4.4
+    type: release
+    leader: Daphne Van Dijken
+    description: Complete migration and refactor of jobs in beckend v4.x
+    link: https://github.com/SciCatProject/projects/3
+  - name: Release 4.5
+    type: release
+    description: bla bla bla bla
+    link: https://github.com/SciCatProject/projects/4
+  - name: pySciCat
+    type: official project
+    description: Low level python library that offers each endpoint as function in python. It requires a good level of knowledge of SciCat backend. Suggested for developing third party application that will interface with SciCat, like data ingestors, dedicated custom UIs, or ETL processes retrieving data from and storing results in SciCat
+    link: https://github.com/SciCatProject/pyscicat
+  - name: Scitacean
+    type: official project
+    description: High level python library hiding all the inner intricasies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of codes. It also provide functionalities for data transfering. 
+    link: https://github.com/SciCatProject/scitacean
+
+
+resources:
+  - name: Official website (aka this one)
+    url: https://scicatproject.github.io
+  - name: Documentation
+    url: https://scicatproject.github.io/documentation
+  - name: Official project
+    url: https:/github.com/ScicatProject
+  - name: pySciCat documentation
+    url: https://scicatproject.github.io/pyscicat/
+  - name: Scitacean documentation
+    url: https://scicatproject.github.io/scitacean/
+  - name: SciCat backend repository
+    url: https://github.com/ScicatProject/scicat-backend-next
+  - name: SciCat website repository
+    url: https://github.com/SciCatProject/scicatproject.github.io
+  - name: SciCat documentation repository
+    url: https://github.com/SciCatProject/documentation
+  - name: pySciCat repository
+    url: https://github.com/SciCatProject/pyscicat
+  - name: Scitacean repository
+    url: https://github.com/SciCatProject/scitacean
 
 
 # Build settings
