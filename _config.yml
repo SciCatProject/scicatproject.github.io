@@ -84,6 +84,9 @@ facilities:
   - image: /assets/images/maxiv_logo.png
     url: https://www.maxiv.lu.se/
     name: Max IV
+  - image: /assets/images/rfi_logo.png
+    url: https://www.rfi.ac.uk/
+    name: Rosalind Franklin Institute
   - image: /assets/images/mlz_blue_rgb.png
     url: https://mlz-garching.de/
     name: Heinz Maier-Leibnitz Zentrum
@@ -161,7 +164,7 @@ resources:
     url: https://scicatproject.github.io
   - name: Documentation
     url: https://scicatproject.github.io/documentation
-  - name: Official project
+  - name: Official github project
     url: https:/github.com/ScicatProject
   - name: pySciCat documentation
     url: https://scicatproject.github.io/pyscicat/
