@@ -108,19 +108,27 @@ team:
   leaders:
     - name: Max Novelli
       company: European Spallation Source
-      email: max.novelli@ess.eu
+      email: max dot novelli at ess dot eu
       role: Project Leader
-    - name: Daphne van Dijken
-      company: Max IV
-      email: 
-      role: Release 4.4 Leader
     - name: Laura Shemilt
       company: Rosalind Franklin Institute
       email:
       role: Documentation Leader
+    - name: Björn Pedersen
+      company: Heinz Maier-Leibnitz Zentrum 
+      email:
+      role: PR and issue review Leader
+    - name: Daphne van Dijken
+      company: Max IV
+      email: 
+      role: Release 4.4 Leader
+    - name: Max Novelli
+      company: ESS
+      email: 
+      role: Release 4.5 Leader
   collaborators:
-    - name: Bjorn Pedersen
-      company: Heinz Maier-Leibnitz Zentrum
+    - name: Junjie Quan
+      company: European Spallation Source
       email:
     - name: Carlo Minotti
       company: Paul Scherrer Institut
@@ -130,13 +138,13 @@ team:
       email:
     - name: Javier Perez
       company: Synchrotron SOLEIL
-      email: javier.perez@synchrotron-soleil.fr
+      email: javier dot perez at synchrotron dash soleil dot fr
     - name: Majid Ounsy
       company: Synchrotron SOLEIL
-      email: majid.ounsy@synchrotron-soleil.fr
+      email: majid dot ounsy at synchrotron dash soleil dot fr
     - name: Patrick Madela
       company: Synchrotron SOLEIL
-      email: patrick.madela@synchrotron-soleil.fr
+      email: patrick dot madela at synchrotron soleil dot fr
 
 
 efforts:
