@@ -152,7 +152,7 @@ efforts:
     link: https://github.com/SciCatProject/projects/3
   - name: Release 4.5
     type: release
-    description: bla bla bla bla
+    description: Improve search functionalities and UI
     link: https://github.com/SciCatProject/projects/4
   - name: pySciCat
     type: official project
