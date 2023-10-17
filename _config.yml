@@ -20,7 +20,7 @@
 
 title: SciCat
 email: max.novelli@ess.eu
-slogan: Manage and annotate your scientific data.
+slogan: Manage and annotate your scientific data
 description: >- # this means to ignore newlines until "baseurl:"
   SciCat (Scientific Catalog) and its ecosystem provides the all the right tools to ingest, curate, maintain and pulish all your scientific metadata.
 baseurl: '' # the subpath of your site, e.g. /blog
@@ -149,11 +149,11 @@ efforts:
     type: release
     leader: Daphne Van Dijken
     description: Complete migration and refactor of jobs in beckend v4.x
-    link: https://github.com/SciCatProject/projects/3
+    link: https://github.com/orgs/SciCatProject/projects/3
   - name: Release 4.5
     type: release
     description: Improve search functionalities and UI
-    link: https://github.com/SciCatProject/projects/4
+    link: https://github.com/orgs/SciCatProject/projects/4
   - name: pySciCat
     type: official project
     description: Low level python library that offers each endpoint as function in python. It requires a good level of knowledge of SciCat backend. Suggested for developing third party application that will interface with SciCat, like data ingestors, dedicated custom UIs, or ETL processes retrieving data from and storing results in SciCat
