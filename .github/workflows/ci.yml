@@ -2,6 +2,10 @@ name: CI
 
 on: [push, pull_request]
 
+# resources used to create this file
+#https://github.com/peaceiris/actions-gh-pages
+#https://github.com/jeffreytse/jekyll-deploy-action
+
 jobs:
   build:
     name: Build & Deploy
@@ -53,6 +57,4 @@ jobs:
     github_token: ${{ secrets.GITHUB_TOKEN }}
     publish_dir: ./public
 
-https://github.com/peaceiris/actions-gh-pages
 
-https://github.com/jeffreytse/jekyll-deploy-action
