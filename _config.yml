@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -20,11 +20,11 @@
 
 title: SciCat
 email: max.novelli@ess.eu
-slogan: Manage and annotate your scientific data
+slogan: Manage and annotate your scientific data.
 description: >- # this means to ignore newlines until "baseurl:"
   SciCat (Scientific Catalog) and its ecosystem provides the all the right tools to ingest, curate, maintain and pulish all your scientific metadata.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'http://scicatproject.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 
 version: 2.0
 last_updated: 2023/10/02
@@ -49,7 +49,6 @@ pill_4:
   title: Publish
   oneline: Add DOI and share
 
-
 feature_1:
   image: /assets/images/ball.jpg
   title: FAIR data
@@ -59,14 +58,14 @@ feature_1:
 feature_2:
   image: /assets/images/extend.jpg
   title: Integrate, Extende, and Automate
-  text: Easily extend functionality through the OpenAPI REST. Automate connecting to message systems.  
+  text: Easily extend functionality through the OpenAPI REST. Automate connecting to message systems.
   attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Pixabay</a>)
 
 feature_3:
   image: /assets/images/stack.jpg
   title: Modern Technology Stack
   text: Built on Node.js, Angular, Nest.Js and MongoBD
-  attribution: (Image by <a href="https://pixabay.com/users/ar130405-423602/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">ar130405</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">Pixabay</a>) 
+  attribution: (Image by <a href="https://pixabay.com/users/ar130405-423602/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">ar130405</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">Pixabay</a>)
 
 feature_4:
   image: /assets/images/open.jpg
@@ -103,7 +102,6 @@ facilities:
     url: https://www.daphne4nfdi.de
     name: DAta from PHoton and Neutron Experiments
 
-
 team:
   leaders:
     - name: Max Novelli
@@ -115,16 +113,16 @@ team:
       email:
       role: Documentation Leader
     - name: Björn Pedersen
-      company: Heinz Maier-Leibnitz Zentrum 
+      company: Heinz Maier-Leibnitz Zentrum
       email:
       role: PR and issue review Leader
     - name: Daphne van Dijken
       company: Max IV
-      email: 
+      email:
       role: Release 4.4 Leader
     - name: Max Novelli
       company: ESS
-      email: 
+      email:
       role: Release 4.5 Leader
   collaborators:
     - name: Junjie Quan
@@ -132,7 +130,7 @@ team:
       email:
     - name: Carlo Minotti
       company: Paul Scherrer Institut
-      email: 
+      email:
     - name: Dylan McReynolds
       company: Advance Light Source
       email:
@@ -145,7 +143,6 @@ team:
     - name: Patrick Madela
       company: Synchrotron SOLEIL
       email: patrick dot madela at synchrotron soleil dot fr
-
 
 efforts:
   - name: Release 4.4
@@ -163,9 +160,8 @@ efforts:
     link: https://github.com/SciCatProject/pyscicat
   - name: Scitacean
     type: official project
-    description: High level python library hiding all the inner intricasies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of codes. It also provide functionalities for data transfering. 
+    description: High level python library hiding all the inner intricasies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of codes. It also provide functionalities for data transfering.
     link: https://github.com/SciCatProject/scitacean
-
 
 resources:
   - name: Official website (aka this one)
@@ -189,12 +185,10 @@ resources:
   - name: Scitacean repository
     url: https://github.com/SciCatProject/scitacean
 
-
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
