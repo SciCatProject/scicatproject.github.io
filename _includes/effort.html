@@ -1,0 +1,21 @@
+<section id="effort" class="effort text-center bg-light">
+ <div class="container">
+  <h1 class="mt-5 mb-3">Efforts</h1>
+  <div class="row">
+   {% for effort in site.efforts %}
+   <!-- <div class="effort">  -->
+     <div class="effort-name col-lg-6 col-sm-12">
+      <div class="name">{{ effort.name }}</div>
+     </div>
+     <div class="effort-info col-lg-6 cols-sm-12">
+      <div class="description">{{ effort.description }}</div>
+      <div class="link"><a href="{{ effort.link }}">{{ effort.link }}</a></div>
+      {% if effort.leader %}
+       <div class="leader-label">Leader</div><div class="leader">{{ effort.leader }}</div>
+      {% endif %}
+     </div>
+     <!-- </div> -->
+   {% endfor %}
+  </div>
+ </div>
+</section>

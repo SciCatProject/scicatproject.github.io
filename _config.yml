@@ -1,1 +1,216 @@
-theme: jekyll-theme-slate
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: SciCat
+email: max.novelli@ess.eu
+slogan: Manage and annotate your scientific data
+description: >- # this means to ignore newlines until "baseurl:"
+  SciCat (Scientific Catalog) and its ecosystem provides the all the right tools to ingest, curate, maintain and pulish all your scientific metadata.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+version: 2.0
+last_update: 2023/10/02
+
+pill_1:
+  icon: fa-gears
+  title: Ingest
+  oneline: Automate data importing
+
+pill_2:
+  icon: fa-tag
+  title: Annotate
+  oneline: Enrich your data
+
+pill_3:
+  icon: fa-magnifying-glass
+  title: Find
+  oneline: Browse and search your data
+
+pill_4:
+  icon: fa-globe
+  title: Publish
+  oneline: Add DOI and share
+
+
+feature_1:
+  image: /assets/images/ball.jpg
+  title: FAIR data
+  text: SciCat is an important building block to implement a FAIR data managmement policy
+  attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Pixabay</a>)
+
+feature_2:
+  image: /assets/images/extend.jpg
+  title: Integrate, Extende, and Automate
+  text: Easily extend functionality through the OpenAPI REST. Automate connecting to message systems.  
+  attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Pixabay</a>)
+
+feature_3:
+  image: /assets/images/stack.jpg
+  title: Modern Technology Stack
+  text: Built on Node.js, Angular, Nest.Js and MongoBD
+  attribution: (Image by <a href="https://pixabay.com/users/ar130405-423602/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">ar130405</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">Pixabay</a>) 
+
+feature_4:
+  image: /assets/images/open.jpg
+  title: Open Source
+  text: Fully Open Source with a committed and welcoming team of developers.
+  attribution: (Photo by <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim Mossholder</a> on <a href="https://unsplash.com/s/photos/open-source?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>)
+
+facilities:
+  - image: /assets/images/ess_logo.png
+    url: https://www.ess.eu
+    name: European Spallation Source
+  - image: /assets/images/psi_logo.png
+    url: https://www.psi.ch
+    name: Paul Scherrer Institut
+  - image: /assets/images/maxiv_logo.png
+    url: https://www.maxiv.lu.se/
+    name: Max IV
+  - image: /assets/images/rfi_logo.png
+    url: https://www.rfi.ac.uk/
+    name: Rosalind Franklin Institute
+  - image: /assets/images/mlz_blue_rgb.png
+    url: https://mlz-garching.de/
+    name: Heinz Maier-Leibnitz Zentrum
+  - image: /assets/images/als_logo.png
+    url: https://als.lbl.gov/
+    name: Advanced Light Source
+  - image: /assets/images/desy_logo.png
+    url: https://www.desy.de/
+    name: Deutsches Elektronen-Synchrotron DESY
+  - image: /assets/images/soleil_logo.png
+    url: https://www.synchrotron-soleil.fr
+    name: Sychrotron SOLEIL
+  - image: /assets/images/daphne_logo.png
+    url: https://www.daphne4nfdi.de
+    name: DAta from PHoton and Neutron Experiments
+
+
+team:
+  leaders:
+    - name: Max Novelli
+      company: European Spallation Source
+      email: max dot novelli at ess dot eu
+      role: Project Leader
+    - name: Laura Shemilt
+      company: Rosalind Franklin Institute
+      email:
+      role: Documentation Leader
+    - name: Björn Pedersen
+      company: Heinz Maier-Leibnitz Zentrum 
+      email:
+      role: PR and issue review Leader
+    - name: Daphne van Dijken
+      company: Max IV
+      email: 
+      role: Release 4.4 Leader
+    - name: Max Novelli
+      company: ESS
+      email: 
+      role: Release 4.5 Leader
+  collaborators:
+    - name: Junjie Quan
+      company: European Spallation Source
+      email:
+    - name: Carlo Minotti
+      company: Paul Scherrer Institut
+      email: 
+    - name: Dylan McReynolds
+      company: Advance Light Source
+      email:
+    - name: Javier Perez
+      company: Synchrotron SOLEIL
+      email: javier dot perez at synchrotron dash soleil dot fr
+    - name: Majid Ounsy
+      company: Synchrotron SOLEIL
+      email: majid dot ounsy at synchrotron dash soleil dot fr
+    - name: Patrick Madela
+      company: Synchrotron SOLEIL
+      email: patrick dot madela at synchrotron soleil dot fr
+
+
+efforts:
+  - name: Release 4.4
+    type: release
+    leader: Daphne Van Dijken
+    description: Complete migration and refactor of jobs in beckend v4.x
+    link: https://github.com/SciCatProject/projects/3
+  - name: Release 4.5
+    type: release
+    description: bla bla bla bla
+    link: https://github.com/SciCatProject/projects/4
+  - name: pySciCat
+    type: official project
+    description: Low level python library that offers each endpoint as function in python. It requires a good level of knowledge of SciCat backend. Suggested for developing third party application that will interface with SciCat, like data ingestors, dedicated custom UIs, or ETL processes retrieving data from and storing results in SciCat
+    link: https://github.com/SciCatProject/pyscicat
+  - name: Scitacean
+    type: official project
+    description: High level python library hiding all the inner intricasies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of codes. It also provide functionalities for data transfering. 
+    link: https://github.com/SciCatProject/scitacean
+
+
+resources:
+  - name: Official website (aka this one)
+    url: https://scicatproject.github.io
+  - name: Documentation
+    url: https://scicatproject.github.io/documentation
+  - name: Official github project
+    url: https:/github.com/ScicatProject
+  - name: pySciCat documentation
+    url: https://scicatproject.github.io/pyscicat/
+  - name: Scitacean documentation
+    url: https://scicatproject.github.io/scitacean/
+  - name: SciCat backend repository
+    url: https://github.com/ScicatProject/scicat-backend-next
+  - name: SciCat website repository
+    url: https://github.com/SciCatProject/scicatproject.github.io
+  - name: SciCat documentation repository
+    url: https://github.com/SciCatProject/documentation
+  - name: pySciCat repository
+    url: https://github.com/SciCatProject/pyscicat
+  - name: Scitacean repository
+    url: https://github.com/SciCatProject/scitacean
+
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
