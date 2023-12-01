@@ -58,6 +58,7 @@ header.masthead {
   background-size: cover;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  height: 62vh;
 
   .overlay {
     position: absolute;
@@ -70,9 +71,16 @@ header.masthead {
   }
 
   .container {
-    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
     img {
-      width: 70%;
+      width: 55%;
     }
     h1 {
       margin-bottom: 0.5rem !important;
@@ -104,6 +112,14 @@ header.masthead {
 }
 
 .features {
+  .features-row {
+    height: 20vh !important;
+
+    @media (max-width: 985px) {
+      height: 30vh !important;
+    }
+  }
+
   .features-item {
     overflow: hidden;
     position: relative;
@@ -123,15 +139,33 @@ header.masthead {
     .features-content {
       position: relative;
       padding: 1rem;
+      height: 100%;
+
+      .features-content-text {
+        width: 95%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        p {
+          font-size: 1.25rem;
+        }
+      }
 
       .attribution {
-	position: absolute;
-	right: 1rem;
-	bottom: -0.9rem;
-	font-size: 0.7rem;
+        position: absolute;
+        right: 1rem;
+        bottom: -0.9rem;
+        font-size: 0.7rem;
       }
     }
   }
+}
+
+.facility {
+  margin-bottom: 30px !important;
 }
 
 .facilities {
@@ -142,9 +176,24 @@ header.masthead {
 }
 
 .team {
+  .team-col {
+    flex: 0 0 auto;
+    width: 20%;
+    height: 150px;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+
   .leader {
     .leadership {
       font-size: 1.2rem;
+      padding: 5px 0;
+
+      @media (max-width: 1000px) {
+        padding: 5px 0 20px 0;
+      }
     }
     .person {
       font-size: 1.5rem;
@@ -158,9 +207,17 @@ header.masthead {
       font-size: 0.8rem;
     }
   }
+
   .collaborator {
+    height: 150px;
+
     .person {
       font-size: 1.3rem;
+      margin-top: 12%;
+
+      @media (max-width: 992px) {
+        margin-top: 5%;
+      }
     }
     .company {
       font-size: 0.9rem;
@@ -194,16 +251,11 @@ aside.section-breaker {
     border-bottom: 1px lightgray solid;
     margin-bottom: 1rem;
 
+    .text {
+      text-align: left;
 
-    .description {
-      text-align: left;
-    }
-    .link {
-      text-align: left;
-      a {
-        text-decoration: none;
-	color: black;
-	font-style: italic;
+      @media (max-width: 1000px) {
+        text-align: center;
       }
     }
   }
@@ -225,11 +277,7 @@ aside.section-breaker {
 
 section#resources {
   .resource {
-    a {
-      text-decoration: none;
-      color: black;
-      font-style: italic;
-    }
+    margin-bottom: 10px;
   }
 }
 

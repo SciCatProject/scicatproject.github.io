@@ -1,3 +1,13 @@
+<script>
+  onClick = (event) => {
+    let navLinks = document.querySelectorAll(".nav-link");
+    for (let i = 0; i < navLinks.length; i++) {
+      navLinks[i].classList.remove("active");
+    }
+    event.target.classList.add("active");
+  }
+</script>
+
 <nav class="navbar fixed-top affix-top navbar-expand-lg navbar-light bg-light navbar-fixed-top">
  <div class="container-fluid">
   <div class="navbar-header">
@@ -9,23 +19,22 @@
   <div class="navbar-menu collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
    <ul class="nav navbar-nav nav-pills mb-2 mb-lg-0">
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link active" aria-current="page" href="#">Home</a>
+     <a class="page-scroll nav-link active" aria-current="page" href="#" onclick="onClick(event);">Home</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#intro">Intro</a>
+     <a class="page-scroll nav-link" href="#intro" onclick="onClick(event);">Intro</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#facilities">Facilities</a>
+     <a class="page-scroll nav-link" href="#facilities" onclick="onClick(event);">Facilities</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#team">Team</a>
+     <a class="page-scroll nav-link" href="#team" onclick="onClick(event);">Team</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#effort">Effort</a>
+     <a class="page-scroll nav-link" href="#effort" onclick="onClick(event);">Effort</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#resources">Resources</a>
+     <a class="page-scroll nav-link" href="#resources" onclick="onClick(event);">Resources</a>
     </li>
   </div>
 </nav>
-
