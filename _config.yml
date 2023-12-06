@@ -22,12 +22,12 @@ title: SciCat
 email: max.novelli@ess.eu
 slogan: Manage and annotate your scientific data
 description: >- # this means to ignore newlines until "baseurl:"
-  SciCat (Scientific Catalog) and its ecosystem provides the all the right tools to ingest, curate, maintain and pulish all your scientific metadata.
+  SciCat (Scientific Catalog) and its ecosystem provides all the right tools to ingest, curate, maintain and publish all your scientific metadata.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-version: 2.0
-last_updated: 2023/10/02
+version: 2.0.1
+last_updated: 2023/10/31
 
 pill_1:
   icon: fa-gears
@@ -53,25 +53,25 @@ pill_4:
 feature_1:
   image: /assets/images/ball.jpg
   title: FAIR data
-  text: SciCat is an important building block to implement a FAIR data managmement policy.
+  text: SciCat is an important building block to implement a FAIR data management policy
   attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Pixabay</a>)
 
 feature_2:
   image: /assets/images/extend.jpg
-  title: Integrate, Extend and Automate
-  text: Easily extend functionality through the OpenAPI REST. Automate connecting to message systems.  
+  title: Integrate, Extend, and Automate
+  text: Easily extend functionality through the RESTful OpenAPI. Automate connecting to message systems.  
   attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Pixabay</a>)
 
 feature_3:
   image: /assets/images/stack.jpg
   title: Modern Technology Stack
-  text: Built on Node.js, Angular, Nest.Js and MongoBD.
+  text: Built on Node.js, Angular, Nest.js and MongoDB
   attribution: (Image by <a href="https://pixabay.com/users/ar130405-423602/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">ar130405</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">Pixabay</a>) 
 
 feature_4:
   image: /assets/images/open.jpg
   title: Open Source
-  text: Fully Open Source with a committed and welcoming team of developers.
+  text: Fully open source with a committed and welcoming team of developers.
   attribution: (Photo by <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim Mossholder</a> on <a href="https://unsplash.com/s/photos/open-source?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>)
 
 facilities:
@@ -151,7 +151,7 @@ efforts:
   - name: Release 4.4
     type: release
     leader: Daphne Van Dijken
-    description: Complete migration and refactor of jobs in beckend v4.x
+    description: Complete migration and refactor of jobs in backend v4.x
     link: https://github.com/orgs/SciCatProject/projects/3
   - name: Release 4.5
     type: release
@@ -159,11 +159,11 @@ efforts:
     link: https://github.com/orgs/SciCatProject/projects/4
   - name: pySciCat
     type: official project
-    description: Low level python library that offers each endpoint as function in python. It requires a good level of knowledge of SciCat backend. Suggested for developing third party application that will interface with SciCat, like data ingestors, dedicated custom UIs, or ETL processes retrieving data from and storing results in SciCat
+    description: Low level python library that offers each endpoint as function in python. It requires a good level of knowledge of SciCat backend. Suggested for developing third party applications that will interface with SciCat, like data ingestors, dedicated custom UIs, or ETL processes retrieving data from and storing results in SciCat
     link: https://github.com/SciCatProject/pyscicat
   - name: Scitacean
     type: official project
-    description: High level python library hiding all the inner intricasies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of codes. It also provide functionalities for data transfering. 
+    description: High level python library hiding all the inner intricacies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of code. It also provide functionalities for data transferring. 
     link: https://github.com/SciCatProject/scitacean
 
 
