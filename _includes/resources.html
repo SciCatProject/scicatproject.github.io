@@ -1,10 +1,10 @@
 <section id="resources" class="effort text-center bg-light">
  <div class="container">
-  <h1 class="mt-5 mb-3">Resources</h1>
+  <h1 class="mt-5 mb-5">Resources</h1>
   <div class="row">
    {% for resource in site.resources %}
-     <div class="resource col-lg-6 col-sm-12">
-      <a href="{{ resource.url }}">{{ resource.name }}</a>
+     <div class="resource">
+      <a href="{{ resource.url }}" target="_blank">{{ resource.name }}</a>
      </div>
    {% endfor %}
   </div>
