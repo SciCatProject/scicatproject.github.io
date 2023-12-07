@@ -1,9 +1,9 @@
 <section id="team" class="team text-center bg-light">
  <div class="container mb-3">
   <h1 class="mt-5 mb-5">Team</h1>
-  <div class="row">
+  <div class="row justify-content-center">
    {% for leader in site.team.leaders %}
-    <div class="leader team-col card">
+    <div class="leader col-lg-4 card">
      <div class="leadership">{{ leader.role }}</div>
      <div class="person">{{ leader.name }}</div>
      {% if leader.company %}<div class="company">{{ leader.company }}</div> {% endif %}

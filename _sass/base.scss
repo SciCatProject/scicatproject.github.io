@@ -170,26 +170,17 @@ header.masthead {
 
 .facilities {
   a {
-    text-decoration: none;
-    color: var(--bs-body-color); 
+    color: var(--bs-body-color);
   }
 }
 
 .team {
-  .team-col {
-    flex: 0 0 auto;
-    width: 20%;
+  .leader {
     height: 150px;
 
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
-  }
-
-  .leader {
     .leadership {
       font-size: 1.2rem;
-      padding: 5px 0;
+      padding: 25px 0 0 0;
 
       @media (max-width: 1000px) {
         padding: 5px 0 20px 0;
@@ -257,6 +248,10 @@ aside.section-breaker {
       @media (max-width: 1000px) {
         text-align: center;
       }
+
+      a {
+        color: var(--bs-body-color) !important;
+      }
     }
   }
 
@@ -278,6 +273,10 @@ aside.section-breaker {
 section#resources {
   .resource {
     margin-bottom: 10px;
+
+    a {
+      color: var(--bs-body-color) !important;
+    }
   }
 }
 
