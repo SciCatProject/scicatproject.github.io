@@ -11,7 +11,7 @@
 <nav class="navbar fixed-top affix-top navbar-expand-lg navbar-light bg-light navbar-fixed-top">
  <div class="container-fluid">
   <div class="navbar-header">
-   <a class="navbar-brand" href="#"><img src="assets/images/SciCat_logo_full_100x48.png"></a>
+   <a class="navbar-brand" href="#"><img src="{{ '/assets/images/SciCat_logo_full_100x48.png' | releative_url }}"></a>
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
    </button>
@@ -19,22 +19,22 @@
   <div class="navbar-menu collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
    <ul class="nav navbar-nav nav-pills mb-2 mb-lg-0">
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link active" aria-current="page" href="#" onclick="onClick(event);">Home</a>
+     <a class="page-scroll nav-link active" aria-current="page" href="{{'#' | relative_url }}" onclick="onClick(event);">Home</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#intro" onclick="onClick(event);">Intro</a>
+     <a class="page-scroll nav-link" href="{{'#intro' | relative_url }}" onclick="onClick(event);">Intro</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#facilities" onclick="onClick(event);">Facilities</a>
+     <a class="page-scroll nav-link" href="{{'#facilities' | relative_url }}" onclick="onClick(event);">Facilities</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#team" onclick="onClick(event);">Team</a>
+     <a class="page-scroll nav-link" href="{{'#team' | relative_url }}" onclick="onClick(event);">Team</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#effort" onclick="onClick(event);">Effort</a>
+     <a class="page-scroll nav-link" href="{{'#effort' | relative_url }}" onclick="onClick(event);">Effort</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" href="#resources" onclick="onClick(event);">Resources</a>
+     <a class="page-scroll nav-link" href="{{'#resources' | relative_url }}" onclick="onClick(event);">Resources</a>
     </li>
   </div>
 </nav>
