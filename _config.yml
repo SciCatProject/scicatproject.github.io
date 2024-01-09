@@ -26,8 +26,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-version: 2.1.0
-last_updated: 2023/10/31
+version: 2.2.0
+last_updated: 2024/01/09
 
 pill_1:
   icon: fa-gears
@@ -74,6 +74,16 @@ feature_4:
   text: Fully open source with a committed and welcoming team of developers.
   attribution: (Photo by <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim Mossholder</a> on <a href="https://unsplash.com/s/photos/open-source?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>)
 
+
+backend_release:
+  url: https://github.com/SciCatProject/scicat-backend-next
+  version: Elastic Search, v4.4.0
+
+frontend_release:
+  url: https://github.com/SciCatProject/frontend
+  version: Elastic Search, v4.4.0
+
+
 facilities:
   - image: /assets/images/ess_logo.png
     url: https://www.ess.eu
@@ -117,15 +127,15 @@ team:
     - name: Björn Pedersen
       company: Heinz Maier-Leibnitz Zentrum 
       email:
-      role: PR and issue review Leader
+      role: PR and Issue Review Leader
     - name: Daphne van Dijken
       company: Max IV
       email: 
-      role: Release 4.4 Leader
+      role: Release Jobs Leader
     - name: Max Novelli
       company: ESS
       email: 
-      role: Release 4.5 Leader
+      role: Release Elastic Search Leader
   collaborators:
     - name: Junjie Quan
       company: European Spallation Source
@@ -148,15 +158,21 @@ team:
 
 
 efforts:
-  - name: Release 4.4
+  - name: Release Jobs
     type: release
     leader: Daphne Van Dijken
     description: Complete migration and refactor of jobs in backend v4.x
     link: https://github.com/orgs/SciCatProject/projects/3
-  - name: Release 4.5
+  - name: Release Elastic Search
     type: release
-    description: Improve search functionalities and UI
-    link: https://github.com/orgs/SciCatProject/projects/4
+    leader: Max Novelli
+    description: Integrate Elastic Search with SciCat
+    link: https://github.com/orgs/SciCatProject/projects/7
+  - name: Release Search UI
+    type: release
+    leader: Igor Khokhriakov
+    description: Improving usability of frontend search UI and adding needed functionality to backend
+    link: https://github.com/orgs/SciCatProject/projects/5
   - name: pySciCat
     type: official project
     description: Low level python library that offers each endpoint as function in python. It requires a good level of knowledge of SciCat backend. Suggested for developing third party applications that will interface with SciCat, like data ingestors, dedicated custom UIs, or ETL processes retrieving data from and storing results in SciCat
