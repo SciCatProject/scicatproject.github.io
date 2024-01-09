@@ -135,7 +135,11 @@ team:
     - name: Max Novelli
       company: ESS
       email: 
-      role: Release Elastic Search Leader
+      role: Release 4.5 Leader
+    - name: Igor Khokhriakov
+      company: DESY
+      email: 
+      role: Release Search UI Leader
   collaborators:
     - name: Junjie Quan
       company: European Spallation Source
