@@ -132,10 +132,6 @@ team:
       company: Max IV
       email: 
       role: Release Jobs Leader
-    - name: Max Novelli
-      company: ESS
-      email: 
-      role: Release 4.5 Leader
     - name: Igor Khokhriakov
       company: DESY
       email: 
@@ -167,11 +163,6 @@ efforts:
     leader: Daphne Van Dijken
     description: Complete migration and refactor of jobs in backend v4.x
     link: https://github.com/orgs/SciCatProject/projects/3
-  - name: Release Elastic Search
-    type: release
-    leader: Max Novelli
-    description: Integrate Elastic Search with SciCat
-    link: https://github.com/orgs/SciCatProject/projects/7
   - name: Release Search UI
     type: release
     leader: Igor Khokhriakov
