@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5 {
     top: 5px;
     left: 5px;
   }
+
+  #nav-logo {
+    display: none;
+  }
+
   .navbar-menu {
     padding-left: 120px;
     padding-right: 120px;
@@ -57,7 +62,6 @@ header.masthead {
   background: url("/assets/images/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 2rem;
-  padding-bottom: 2rem;
   height: 62vh;
 
   .overlay {
@@ -90,8 +94,10 @@ header.masthead {
 }
 
 .pills-icons {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 
   .pills-icons-item {
     max-width: 20rem;
@@ -161,6 +167,22 @@ header.masthead {
         font-size: 0.7rem;
       }
     }
+  }
+}
+
+.latest {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: 7px 0;
+  background-color: rgba(0, 0, 0, 0.831);
+  color: white;
+  text-align: center;
+
+  h4 {
+    font-weight: 500;
+  }
+  a {
+    color: white;
   }
 }
 
