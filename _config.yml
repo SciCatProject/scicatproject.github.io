@@ -128,8 +128,8 @@ team:
       company: Heinz Maier-Leibnitz Zentrum 
       email:
       role: PR and Issue Review Leader
-    - name: Daphne van Dijken
-      company: Max IV
+    - name: Spencer Bliver
+      company: PSI
       email: 
       role: Release Jobs Leader
     - name: Igor Khokhriakov
@@ -184,7 +184,7 @@ resources:
   - name: Documentation
     url: https://scicatproject.github.io/documentation
   - name: Official github project
-    url: https:/github.com/ScicatProject
+    url: https://github.com/ScicatProject
   - name: pySciCat documentation
     url: https://scicatproject.github.io/pyscicat/
   - name: Scitacean documentation
