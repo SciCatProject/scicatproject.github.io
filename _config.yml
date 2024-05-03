@@ -93,7 +93,7 @@ facilities:
     name: Paul Scherrer Institut
   - image: /assets/images/maxiv_logo.png
     url: https://www.maxiv.lu.se/
-    name: Max IV
+    name: MAX IV
   - image: /assets/images/rfi_logo.png
     url: https://www.rfi.ac.uk/
     name: Rosalind Franklin Institute
@@ -108,7 +108,7 @@ facilities:
     name: Deutsches Elektronen-Synchrotron DESY
   - image: /assets/images/soleil_logo.png
     url: https://www.synchrotron-soleil.fr
-    name: Sychrotron SOLEIL
+    name: Synchrotron SOLEIL
   - image: /assets/images/daphne_logo.png
     url: https://www.daphne4nfdi.de
     name: DAta from PHoton and Neutron Experiments
