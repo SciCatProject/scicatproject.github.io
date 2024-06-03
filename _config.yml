@@ -178,27 +178,30 @@ efforts:
     link: https://github.com/SciCatProject/scitacean
 
 
-resources:
-  - name: Official website (aka this one)
-    url: https://scicatproject.github.io
-  - name: Documentation
-    url: https://scicatproject.github.io/documentation
+documentation:
+
   - name: Official github project
+    description: All software packages that are part of the SciCat ecosystem are in the Github project. For documentation see each project.
     url: https://github.com/ScicatProject
-  - name: pySciCat documentation
-    url: https://scicatproject.github.io/pyscicat/
-  - name: Scitacean documentation
-    url: https://scicatproject.github.io/scitacean/
-  - name: SciCat backend repository
+  - name: User Guides
+    description: Experience SciCat as a user
+    url: https://scicatproject.github.io/documentation/Users/
+  - name: Get Started
+    description: To get started with a standalone installation of SciCat and to know more about how to add it to your infrastructure visit the SciCat Live repository.
+    url: https://github.com/ScicatProject/scicatlive
+  - name: Backend
+    description: For developer documentation on the SciCat backend. 
     url: https://github.com/ScicatProject/scicat-backend-next
-  - name: SciCat website repository
-    url: https://github.com/SciCatProject/scicatproject.github.io
-  - name: SciCat documentation repository
-    url: https://github.com/SciCatProject/documentation
-  - name: pySciCat repository
-    url: https://github.com/SciCatProject/pyscicat
-  - name: Scitacean repository
-    url: https://github.com/SciCatProject/scitacean
+  - name: Frontend
+    description: For more information on the SciCat frontend and developer documentation.
+    url: https://github.com/ScicatProject/frontend
+  - name: pySciCat
+    description: The pyscicat project is a python client library to interact with the SciCat backend. 
+    url: https://scicatproject.github.io/pyscicat/
+  - name: Scitacean 
+    description: Scictacean is a high level python packaging for uploading and downloading data to and from SciCat. 
+    url: https://scicatproject.github.io/scitacean/
+
 
 
 # Build settings
