@@ -185,7 +185,7 @@ documentation:
     url: https://github.com/ScicatProject
   - name: User Guides
     description: Experience SciCat as a user
-    url: https://scicatproject.github.io/documentation/Users/
+    url: https://scicatproject.github.io/documentation/
   - name: Get Started
     description: To get started with a standalone installation of SciCat and to know more about how to add it to your infrastructure visit the SciCat Live repository.
     url: https://github.com/ScicatProject/scicatlive

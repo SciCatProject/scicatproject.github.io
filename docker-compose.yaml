@@ -2,8 +2,11 @@ version: '3'
 services:
   serve:
     image: jekyll/jekyll:latest
-    command: jekyll serve --watch --force_polling --verbose
+    command: jekyll serve --watch --force_polling --verbose --trace
     ports:
-      - 4000:4000
+      - "4000:4000"
+    environment:
+      JEKYLL_UID: $JEKYLL_UID
+      JEKYLL_GID: $JEKYLL_GID
     volumes:
       - .:/srv/jekyll
