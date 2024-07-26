@@ -25,7 +25,7 @@ gem install bundler jekyll
 ## Running with docker
 
 You may prefer to build using a docker container to avoid installing all the dependencies.
-This can be done by simply running the following from the projlect directory:
+This can be done by simply running the following from the project directory:
 
 ```bash
 docker-compose up
