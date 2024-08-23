@@ -129,20 +129,21 @@ team:
       email:
       role: PR and Issue Review Leader
     - name: Spencer Bliven
-      company: PSI
+      company: Paul Scherrer Institut
       email: 
       role: Release Jobs Leader
     - name: Igor Khokhriakov
       company: DESY
       email: 
       role: Release Search UI Leader
+    - name: Carlo Minotti
+      company: Paul Scherrer Institut
+      email: 
+      role: ScicatLive Leader
   collaborators:
     - name: Junjie Quan
       company: European Spallation Source
       email:
-    - name: Carlo Minotti
-      company: Paul Scherrer Institut
-      email: 
     - name: Dylan McReynolds
       company: Advance Light Source
       email:
@@ -176,6 +177,10 @@ efforts:
     type: official project
     description: High level python library hiding all the inner intricacies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of code. It also provide functionalities for data transferring. 
     link: https://github.com/SciCatProject/scitacean
+  - name: ScicatLive
+    type: official project
+    description: Standalone installation of SciCat and dependencies based on docker compose
+    link: https://scicatproject.github.io/scicatlive/latest/
 
 
 documentation:
