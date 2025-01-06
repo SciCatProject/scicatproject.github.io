@@ -58,9 +58,9 @@ h1, h2, h3, h4, h5 {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("/assets/images/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
+  //background-color: #343a40;
+  //background: url("/assets/images/bg-masthead.jpg") no-repeat center center;
+  //background-size: cover;
   padding-top: 2rem;
   height: 62vh;
 
@@ -71,7 +71,7 @@ header.masthead {
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   .container {
@@ -91,6 +91,21 @@ header.masthead {
     }
   }
 
+}
+
+header.masthead:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('/assets/images/bg-masthead.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .pills-icons {
@@ -170,7 +185,13 @@ header.masthead {
   }
 }
 
-.latest {
+.mission {
+ h4 {
+  text-aling: justified;
+ }
+}
+
+.releases {
   margin-top: 3rem;
   margin-bottom: 4rem;
   padding: 7px 0;
@@ -178,11 +199,27 @@ header.masthead {
   color: white;
   text-align: center;
 
-  h4 {
-    font-weight: 500;
-  }
-  a {
-    color: white;
+  div.card {
+    height: 5rem;
+    line-height: 5rem;
+    background-color: transparent;
+    border-color: #565454;
+    display: unset;
+    flex-direction: unset;
+    font-weight: 700;
+    font-size: 1.5rem;
+    a {
+      color: white;
+    }
+    div {
+      display: inline;
+    }
+    a#release_backend_zip, a#release_backend_tar,
+    a#release_frontend_zip, a#release_frontend_tar {
+      img {
+        height: 24px;
+      }
+    }
   }
 }
 
