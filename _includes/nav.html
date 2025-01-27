@@ -1,11 +1,12 @@
 <script>
   // Map element Ids to the respective navbar item
   const sections = {
-    intro: "nav-link-intro",
+    mission: "nav-link-mission",
     facilities: "nav-link-facilities",
     team: "nav-link-team",
-    effort: "nav-link-effort",
-    resources: "nav-link-resources"
+    repositories: "nav-link-repositories",
+    documentation: "nav-link-documentation",
+    contact: "nav-link-contact",
   };
 
   // Remove class "active" from all navbar items
@@ -47,18 +48,25 @@
       }
       else if (isElementVisible(elemId)) {
         activateNavLink(sections[elemId]);
+
+        // show/hide logo
+        if (elemId !== "mission") {
+          document.getElementById("nav-logo").style.display = "block";
+        }
+        else {
+          document.getElementById("nav-logo").style.display = "none";
+        }
       }
     });
-
-    // show/hide logo
-    document.getElementById("nav-logo").style.display = isElementVisible("header-logo") ? "none" : "block";
   };
 </script>
 
 <nav class="navbar fixed-top affix-top navbar-expand-lg navbar-light bg-light navbar-fixed-top">
  <div class="container-fluid">
   <div class="navbar-header">
-   <a id="nav-logo" class="navbar-brand" href="#"><img src="{{ '/assets/images/SciCat_logo_full_100x48.png' | releative_url }}"></a>
+   <a id="nav-logo" class="navbar-brand" href="#">
+    <img src="{{ '/assets/images/SciCat_logo_icon.svg' | relative_url }}">
+   </a>
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
    </button>
@@ -69,7 +77,7 @@
      <a class="page-scroll nav-link active" id="nav-link-home" aria-current="page" href="{{'#' | relative_url }}" onclick="onClick(event);">Home</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" id="nav-link-intro" href="{{'#intro' | relative_url }}" onclick="onClick(event);">Intro</a>
+     <a class="page-scroll nav-link" id="nav-link-mission" href="{{'#mission' | relative_url }}" onclick="onClick(event);">Mission</a>
     </li>
     <li class="nav-item mx-lg-3">
      <a class="page-scroll nav-link" id="nav-link-facilities" href="{{'#facilities' | relative_url }}" onclick="onClick(event);">Facilities</a>
@@ -78,10 +86,13 @@
      <a class="page-scroll nav-link" id="nav-link-team" href="{{'#team' | relative_url }}" onclick="onClick(event);">Team</a>
     </li>
     <li class="nav-item mx-lg-3">
-     <a class="page-scroll nav-link" id="nav-link-effort" href="{{'#effort' | relative_url }}" onclick="onClick(event);">Effort</a>
+     <a class="page-scroll nav-link" id="nav-link-repositories" href="{{'#repositories' | relative_url }}" onclick="onClick(event);">Repositories</a>
     </li>
     <li class="nav-item mx-lg-3">
      <a class="page-scroll nav-link" id="nav-link-documentation" href="{{'#documentation' | relative_url }}" onclick="onClick(event);">Documentation</a>
     </li>
+    <li class="nav-item mx-lg-3">
+      <a class="page-scroll nav-link" id="nav-link-contact" href="{{'#contact' | relative_url }}" onclick="onClick(event);">Contact</a>
+     </li>
   </div>
 </nav>

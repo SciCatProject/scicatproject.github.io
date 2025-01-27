@@ -3,24 +3,148 @@
   <h1 class="mt-5 mb-5">Team</h1>
   <div class="row justify-content-center">
    {% for leader in site.team.leaders %}
-    <div class="leader col-lg-4 card">
+    <div class="leader col-lg-4 card" onclick="leaderClick('{{ leader.url }}')">
      <div class="leadership">{{ leader.role }}</div>
      <div class="person">{{ leader.name }}</div>
      {% if leader.company %}<div class="company">{{ leader.company }}</div> {% endif %}
-     {% if leader.email %}<div class="email">{{ leader.email }}</div> {% endif %}
    </div>
    {% endfor %}
   </div>
-  <h2 class="mt-5 mb-5">Collaborators</h2>
-  <div class="row">
-   {% for collaborator in site.team.collaborators %}
-   <div class="collaborator col-lg-4 card">
-    <div class="person">{{ collaborator.name }}</div>
-    {% if collaborator.company %}<div class="company">{{ collaborator.company }}</div> {% endif %}
-    {% if collaborator.email %}<div class="email">{{ collaborator.email }}</div> {% endif %}
-   </div>
-   {% endfor %}
+  <h2 class="mt-5 mb-4">Contributors</h2>
+  <div class="row contributors">
+    <div id="loading" style="display: none;">
+      <div class="loader"></div>
+    </div>
+    <div id="members" class="members-container"></div>
+    <div class="show-more-container">
+      <button id="showAllBtn" class="show-members">Show All</button>
+    </div>
   </div>
  </div>
 </section>
 
+<script>
+  function leaderClick(url) {
+    window.open(url, "_blank");
+  }
+
+  async function fetchOrgMembers() {
+    const orgName = "{{ site.github_organization }}";
+    const response = await fetch(`https://api.github.com/orgs/${orgName}/members`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    return await response.json();
+  }
+
+  async function fetchMemberActivity(orgId, username) {
+    // const query = `
+    //   query($org: ID!, $user: String!) {
+    //     user(login: $user) {
+    //       contributionsCollection(organizationID: $org) {
+    //         totalCommitContributions
+    //         totalPullRequestContributions
+    //         totalIssueContributions
+    //       }
+    //     }
+    //   }
+    // `;
+
+    // const variables = { org: orgId, user: username };
+    // const token = "{{ site.github_api_token }}";
+    // const response = await fetch("https://api.github.com/graphql", {
+    //   method: "POST",
+    //   headers: {
+    //     Authorization: `Bearer ${token}`,
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ query, variables }),
+    // });
+
+    const response = await fetch(`https://api.github.com/users/${username}/events`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    return await response.json();
+  }
+
+  async function fetchAndSortMembers() {
+    const members = await fetchOrgMembers();
+    // for (let member of members) {
+    //   const activity = await fetchMemberActivity(org.id, member.login);
+    //   member.totalActivity =
+    //     activity.totalCommitContributions +
+    //     activity.totalPullRequestContributions +
+    //     activity.totalIssueContributions;
+    // }
+    // members.sort((a, b) => b.totalActivity - a.totalActivity);
+    return members;
+  }
+
+  function displayMember(member) {
+    const memberDiv = document.createElement("div");
+    memberDiv.className = "member";
+
+    const avatar = document.createElement("img");
+    avatar.src = member.avatar_url;
+    avatar.className = "avatar";
+    avatar.onclick = () => window.open(member.html_url, "_blank");
+
+    const popup = document.createElement("div");
+    popup.className = "popup";
+    popup.innerHTML = `<p>${member.login}</p>`;
+
+    memberDiv.appendChild(avatar);
+    memberDiv.appendChild(popup);
+    return memberDiv;
+  }
+
+  function displayAllMembers(members) {
+    const membersContainer = document.getElementById("members");
+    const showAllBtn = document.getElementById("showAllBtn");
+    const loading = document.getElementById("loading");
+
+    membersContainer.innerHTML = "";
+    loading.style.display = "none";
+
+    const membersToDisplay = members.slice(0, 16);
+    membersToDisplay.forEach(member => {
+      membersContainer.appendChild(displayMember(member));
+    });
+
+    let showAll = false;
+    if (members.length > 16) {
+      showAllBtn.style.display = "block";
+      showAllBtn.onclick = () => {
+        if (!showAll) {
+          members.slice(16).forEach(member => {
+            membersContainer.appendChild(displayMember(member));
+          });
+          showAllBtn.innerText = "Show Less";
+        } else {
+          membersContainer.innerHTML = "";
+          displayAllMembers(members);
+          showAllBtn.innerText = "Show All";
+        }
+        showAll = !showAll;
+      };
+    } else {
+      showAllBtn.style.display = "none";
+    }
+  }
+
+  (async () => {
+    const loading = document.getElementById("loading");
+    loading.style.display = "block";
+    try {
+      const sortedMembers = await fetchAndSortMembers();
+      displayAllMembers(sortedMembers);
+    } catch (error) {
+      console.error("Error fetching and sorting members:", error);
+    }
+  })();
+</script>

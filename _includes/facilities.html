@@ -1,15 +1,33 @@
 <section id="facilities" class="facilities text-center bg-light">
- <div class="container mb-3">
-  <h1 class="mt-5 mb-5">Facilities</h1>
-  <div class="row">
-  {% for facility in site.facilities %}
-  <div class="col-lg-4 facility mb-5 mb-lg-0">
-   <a href="{{ facility.url }}" target="_blank">
-    <img class="img-fluid rounded-3 mb-3" src="{{ facility.image }}">
-    <h5>{{ facility.name }}</h5>
-  </a>
- </div>
- {% endfor %}
+  <div class="container mb-3">
+    <h1 class="mt-5 mb-5">Facilities</h1>
+    <div class="row justify-content-center">
+      {% for facility in site.facilities %}
+        <div class="facility col-lg-4 card">
+          <a href="{{ facility.url }}" target="_blank">
+            <img class="facility-logo" src="{{ facility.image }}" alt="{{ facility.name }}">
+          </a>
+          <div class="details">
+            <p class="contact-name mt-2 mb-1">
+              {{ facility.contactName | default: "Contact Name" }}
+            </p>
+            <p class="contact-email">
+              {{ facility.contactEmail | default: "contactemail@example.org" }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.contact-email').forEach(function(element) {
+      element.addEventListener('click', function() {
+        const email = this.textContent.trim();
+        window.location.href = `mailto:${email}`;
+      });
+    });
+  });
+</script>

@@ -1,18 +1,27 @@
-<section id="documentation" class="effort text-center bg-light">
- <div class="container">
-  <h1 class="mt-5 mb-5">Documentation</h1>
-  <div class="row">
-   {% for document in site.documentation %}
-     <div class="documentation"> <div class="documentation-name">
-      <div class="name">{{ document.name }}</div>
-     </div>
-     <div class="documentation-info">
-      <div class="text">{{ document.description }}</div>
-      <div class="text"><a href="{{ document.link }}" target="_blank">{{ document.link }}</a></div>
-      <a href="{{ document.url }}" target="_blank">{{ document.name }}</a>
-     </div>
-   {% endfor %}
+<section id="documentation" class="documentation text-center bg-light">
+  <div class="container mb-3">
+    <h1 class="mt-5 mb-5">Documentation</h1>
+    <div class="row justify-content-center">
+      <div class="documentation-section card card-lg">
+        <div class="details">
+          <a href="{{ site.documentation.main.url }}" target="_blank">
+            <div class="name">{{ site.documentation.main.name }}</div>
+          </a>
+          <div class="text">{{ site.documentation.main.description }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      {% for document in site.documentation.others %}
+        <div class="documentation-section col-lg-4 card">
+          <div class="details">
+            <a href="{{ document.url }}" target="_blank">
+              <div class="name">{{ document.name }}</div>
+            </a>
+            <div class="text">{{ document.description }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
- </div>
 </section>
-
