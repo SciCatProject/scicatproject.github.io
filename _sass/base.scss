@@ -96,7 +96,7 @@ div.container {
     padding-right: 120px;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1300px) {
     .navbar-menu {
       padding: 5px 20px;
     }
@@ -172,6 +172,14 @@ header.masthead:before {
   text-align: justify;
   margin-top: 3%;
  }
+}
+
+// ========= News =========
+
+.news {
+  p {
+    text-align: center;
+  }
 }
 
 // ========= Releases =========
