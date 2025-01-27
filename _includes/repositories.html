@@ -36,7 +36,7 @@
     gitOrg.innerHTML = "";
 
     const orgItem = document.createElement("div");
-    orgItem.className = "repository card card-xl";
+    orgItem.className = "repository card card-lg";
     orgItem.innerHTML = `
       <div class="card-content">
         <div class="repo-logo">
@@ -69,7 +69,7 @@
 
     organization.repositories.forEach(repo => {
       const repoItem = document.createElement("div");
-      repoItem.className = "repository col-lg-5 card";
+      repoItem.className = "repository card card-md";
       repoItem.innerHTML = `
         <div class="card-content">
           <div class="repo-details">
@@ -83,7 +83,7 @@
               </div>` : ''}
               <div class="repo-link">
                 <img src="assets/svgs/star-outline.svg" alt="Stars">
-                <div>${repo.stargazers_count}</div>
+                <div>${repo.stargazers_count} stars</div>
               </div>
               ${repo.license && repo.license.key !== "other" ? `
               <div class="repo-link">
@@ -92,7 +92,7 @@
               </div>` : ''}
               <div class="repo-link">
                 <img src="assets/svgs/source-fork.svg" alt="Forks">
-                <div>${repo.forks_count}</div>
+                <div>${repo.forks_count} forks</div>
               </div>
               <div class="repo-link">
                 <img src="assets/svgs/source-merge.svg" alt="Updated">

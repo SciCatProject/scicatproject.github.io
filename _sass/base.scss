@@ -33,21 +33,32 @@ div.container {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.card-md {
+  flex: 0 0 auto;
+  width: 45%;
+}
+
 .card-lg {
   flex: 0 0 auto;
-  width: 67%;
+  width: 55%;
 }
 
 .card-xl {
   flex: 0 0 auto;
-  width: 84%;
+  width: 67%;
 }
 
-@media (max-width: 991px) {
-  .card-lg {
-    width: 100%;
+@media (max-width: 1200px) {
+  .card-md {
+    width: 90%;
   }
 
+  .card-lg {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
   .card-xl {
     width: 100%;
   }
@@ -111,7 +122,7 @@ div.container {
 header.masthead {
   position: relative;
   padding-top: 2rem;
-  height: 62vh;
+  height: 90vh;
 
   .overlay {
     position: absolute;
@@ -362,7 +373,7 @@ header.masthead:before {
 
 .repositories {
   .repository {
-    min-height: 160px;
+    min-height: 130px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -377,17 +388,17 @@ header.masthead:before {
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 10px;
-      margin-left: 10px;
-      margin-right: 20px;
+      margin-right: 15px;
+      height: 120px;
 
       img {
         width: 100px;
-        height: auto;
       }
     }
 
     .repo-details {
       text-align: left;
+      width: 100%;
 
       .repo-name {
         font-size: 1.2em;
@@ -405,6 +416,9 @@ header.masthead:before {
         font-size: 1rem;
         margin: 15px 0;
         text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .repo-links {
@@ -430,6 +444,12 @@ header.masthead:before {
               text-decoration: underline;
             }
           }
+        }
+      }
+
+      @media (max-width: 770px) {
+        .repo-links {
+          display: block;
         }
       }
     }
