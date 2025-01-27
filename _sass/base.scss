@@ -47,6 +47,10 @@ div.container {
   .card-lg {
     width: 100%;
   }
+
+  .card-xl {
+    width: 100%;
+  }
 }
 
 .section-breaker {
@@ -358,9 +362,9 @@ header.masthead:before {
 
 .repositories {
   .repository {
-    min-height: 130px;
-    padding-left: 10px;
-    padding-right: 10px;
+    min-height: 160px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .repository.card { 
@@ -398,6 +402,7 @@ header.masthead:before {
       }
 
       .repo-description {
+        font-size: 1rem;
         margin: 15px 0;
         text-align: left;
       }
@@ -409,6 +414,7 @@ header.masthead:before {
         .repo-link {
           display: flex;
           color: #808285;
+          font-size: 0.8rem;
 
           img {
             width: 20px;
@@ -434,20 +440,22 @@ header.masthead:before {
 
 .documentation {
   .documentation-section {
-    min-height: 150px;
-    padding-left: 10px;
-    padding-right: 10px;
+    min-height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   a {
-    text-decoration: none;
+    color: #27aae1;
   }
 
   .name {
     font-size: 1.2em;
-    color: #27aae1;
     margin-bottom: 6px;
-    text-decoration: underline;
+  }
+
+  .text {
+    margin-top: 15px;
   }
 }
 
