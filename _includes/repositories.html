@@ -40,10 +40,14 @@
     orgItem.innerHTML = `
       <div class="card-content">
         <div class="repo-logo">
-          <img src="assets/images/SciCat_logo_icon.svg" alt="Repository Logo">
+          <a href="${organization.html_url}" target="_blank">
+            <img src="assets/images/SciCat_logo_icon.svg" alt="Repository Logo">
+          </a>
         </div>
         <div class="repo-details">
-          <h3 class="repo-title">${organization.name}</h3>
+          <h3 class="repo-title">
+            <a href="${organization.html_url}" target="_blank">${organization.name}</a>
+          </h3>
           <p class="repo-description">${organization.description}</p>
           <div class="repo-links">
             <div class="repo-link">
@@ -56,7 +60,7 @@
             </div>
             <div class="repo-link">
               <img src="assets/svgs/link-variant.svg" alt="Link">
-              <a href="${organization.html_url}">${organization.html_url}</a>
+              <a href="${organization.html_url}" target="_blank">${organization.html_url}</a>
             </div>
           </div>
         </div>
@@ -79,24 +83,24 @@
               ${repo.language ? `
               <div class="repo-link">
                 <img src="assets/svgs/code-braces.svg" alt="Language">
-                <div>${repo.language}</div>
+                <p>${repo.language}</p>
               </div>` : ''}
               <div class="repo-link">
                 <img src="assets/svgs/star-outline.svg" alt="Stars">
-                <div>${repo.stargazers_count} stars</div>
+                <p>${repo.stargazers_count} stars</p>
               </div>
               ${repo.license && repo.license.key !== "other" ? `
               <div class="repo-link">
                 <img src="assets/svgs/scale-balance.svg" alt="License">
-                <div>${repo.license.spdx_id}</div>
+                <p>${repo.license.spdx_id}</p>
               </div>` : ''}
               <div class="repo-link">
                 <img src="assets/svgs/source-fork.svg" alt="Forks">
-                <div>${repo.forks_count} forks</div>
+                <p>${repo.forks_count} forks</p>
               </div>
               <div class="repo-link">
                 <img src="assets/svgs/source-merge.svg" alt="Updated">
-                <div>${new Date(repo.pushed_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
+                <p>${new Date(repo.pushed_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
               </div>
             </div>
           </div>

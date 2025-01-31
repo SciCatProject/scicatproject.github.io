@@ -244,11 +244,7 @@ header.masthead:before {
       font-style: italic;
     }
 
-    .contact-email {
-      font-size: 0.9rem;
-    }
-
-    .contact-email:hover {
+    .contact-name:hover {
       text-decoration: underline;
       cursor: pointer;
     }
@@ -322,20 +318,23 @@ header.masthead:before {
   
     .member .popup {
       position: absolute;
-      bottom: 100%;
+      bottom: 112%;
       left: 50%;
       transform: translateX(-50%);
       background-color: white;
       color: #24292f;
       padding: 10px;
       border-radius: 6px;
-      width: 200px;
       text-align: left;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.3s ease, visibility 0.3s ease;
       z-index: 10;
+
+      p {
+        margin-bottom: 0;
+      }
     }
   
     .member .popup:before {
@@ -418,6 +417,16 @@ header.masthead:before {
         margin: 0;
         margin-top: 5px;
         text-align: left;
+
+        a {
+          text-decoration: none;
+          color: #333;
+
+          &:hover {
+            color: #27aae1;
+            text-decoration: underline;
+          }
+        }
       }
 
       .repo-description {
@@ -441,7 +450,7 @@ header.masthead:before {
           img {
             width: 20px;
             height: 20px;
-            margin-right: 10px;
+            margin-right: 3px;
           }
 
           a {

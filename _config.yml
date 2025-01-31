@@ -40,73 +40,78 @@ frontend_release:
 
 
 facilities:
-  - image: /assets/images/ess_logo.png
+  - name: European Spallation Source
+    image: /assets/images/facilities/ess_logo.png
     url: https://www.ess.eu
-    name: European Spallation Source
-    contactName: Junjie Quan
-    contactEmail: 
-  - image: /assets/images/psi_logo.png
+    contactName: Max Novelli
+    contactEmail: max.novelli@ess.eu
+  - name: Paul Scherrer Institut
+    image: /assets/images/facilities/psi_logo.svg
     url: https://www.psi.ch
-    name: Paul Scherrer Institut
     contactName: Carlo Minotti
-    contactEmail:
-  - image: /assets/images/maxiv_logo.png
-    url: https://www.maxiv.lu.se/
-    name: MAX IV
-    contactName:
-    contactEmail:
-  - image: /assets/images/rfi_logo.png
+    contactEmail: scicat-help@lists.psi.ch
+  - name: MAX IV
+    image: /assets/images/facilities/maxiv_logo.png
+    url: https://www.maxiv.lu.se/  
+    contactName: Carla Takahashi
+    contactEmail: carla.takahashi@maxiv.lu.se
+  - name: Rosalind Franklin Institute
+    image: /assets/images/facilities/rfi_logo.png
     url: https://www.rfi.ac.uk/
-    name: Rosalind Franklin Institute
-    contactName:
-    contactEmail:
-  - image: /assets/images/mlz_blue_rgb.png
+    contactName: Laura Shemilt
+    contactEmail: laura.shemilt@rfi.ac.uk
+  - name: Heinz Maier-Leibnitz Zentrum
+    image: /assets/images/facilities/mlz_logo.png
     url: https://mlz-garching.de/
-    name: Heinz Maier-Leibnitz Zentrum
-    contactName:
-    contactEmail:
-  - image: /assets/images/als_logo.png
+    contactName: Björn Pedersen
+    contactEmail: bjoern.pedersen@frm2.tum.de
+  - name: Advanced Light Source
+    image: /assets/images/facilities/als_logo.png
     url: https://als.lbl.gov/
-    name: Advanced Light Source
     contactName: Dylan McReynolds
-    contactEmail:
-  - image: /assets/images/desy_logo.png
-    url: https://www.desy.de/
-    name: Deutsches Elektronen-Synchrotron DESY
-    contactName:
-    contactEmail:
-  - image: /assets/images/soleil_logo.png
+    contactEmail: dmcreynolds@lbl.gov
+  - name: Deutsches Elektronen-Synchrotron
+    image: /assets/images/facilities/desy_logo.png
+    url: https://www.desy.de/  
+    contactName: Regina Hinzmann
+    contactEmail: regina.hinzmann@desy.de
+  - name: Synchrotron SOLEIL
+    image: /assets/images/facilities/soleil_logo.png
     url: https://www.synchrotron-soleil.fr
-    name: Synchrotron SOLEIL
-    contactName: Javier Perez, Majid Ounsy, Patrick Madela
+    contactName: # Javier Perez, Majid Ounsy, Patrick Madela
     contactEmail:
-  - image: /assets/images/daphne_logo.png
+  - name: DAta from PHoton and Neutron Experiments
+    image: /assets/images/facilities/daphne_logo.png
     url: https://www.daphne4nfdi.de
-    name: DAta from PHoton and Neutron Experiments
-    contactName:
-    contactEmail:
+    contactName: Regina Hinzmann, Nicolas Hayen
+    contactEmail: regina.hinzmann@desy.de; hayen@physik.uni-kiel.de
+  - name: Helmholtz Zentrum Dresden Rossendorf
+    image: /assets/images/facilities/hzdr_logo.png
+    url: https://www.hzdr.de/
+    contactName: Oliver Knodel
+    contactEmail: o.knodel@hzdr.de
 
 
 team:
   leaders:
     - name: Max Novelli
-      company: European Spallation Source
+      company: European Spallation Source (ESS)
       role: Project Leader
       url: https://github.com/nitrosx
-    - name: Laura Shemilt
-      company: Rosalind Franklin Institute
+    - name: Regina Hinzmann
+      company: Deutsches Elektronen-Synchrotron (DESY)
       role: Documentation Leader
-      url: https://github.com/LAShemilt
+      url: https://github.com/rkweehinzmann
     - name: Björn Pedersen
-      company: Heinz Maier-Leibnitz Zentrum 
+      company: Heinz Maier-Leibnitz Zentrum (MLZ)
       role: PR and Issue Review Leader
       url: https://github.com/bpedersen2
     - name: Spencer Bliven
-      company: PSI
+      company: Paul Scherrer Institut (PSI)
       role: Release Jobs Leader
       url: https://github.com/sbliven
     - name: Igor Khokhriakov
-      company: DESY
+      company: Deutsches Elektronen-Synchrotron (DESY)
       role: Release Search UI Leader
       url: https://github.com/Ingvord
 
