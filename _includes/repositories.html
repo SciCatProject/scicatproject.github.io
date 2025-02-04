@@ -1,9 +1,10 @@
 <section id="repositories" class="repositories text-center bg-light">
- <div class="container mb-3">
-  <h1 class="mt-5 mb-5">Repositories</h1>
-  <div id="git-org" class="row justify-content-center"></div>
-  <div id="repo-list" class="row justify-content-center"></div>
- </div>
+  <div class="container mb-3">
+    <h1 class="mt-5 mb-5">Repositories</h1>
+    <div id="git-org" class="row justify-content-center"></div>
+    <div id="repo-list" class="row justify-content-center"></div>
+    <button class="show-all-button" onclick="window.open('https://github.com/orgs/{{ site.github_organization }}/repositories', '_blank')">View all repositories</button>
+  </div>
 </section>
 
 <script>

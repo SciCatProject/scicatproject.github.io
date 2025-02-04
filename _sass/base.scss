@@ -70,6 +70,19 @@ div.container {
   height: 0.3rem !important;
 }
 
+.show-all-button {
+  background-color: transparent;
+  color: #27aae1;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    color: #808285;
+  }
+}
+
 // ========= Navbar ========= 
 
 .navbar {
@@ -358,21 +371,15 @@ header.masthead:before {
       display: flex;
       justify-content: center;
       width: 100%;
+
+      #showAllBtn {
+        display: none;
+      }
     }
-  
-    .show-members {
-      display: none;
-      background-color: transparent;
-      color: #27aae1;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 10px;
-      transition: background-color 0.3s ease;
-    }
-  
-    .show-members:hover {
-      color: #808285;
+
+    .show-members-note {
+      font-size: 0.9rem;
+      margin-top: 20px;
     }
   }
 }
@@ -380,6 +387,10 @@ header.masthead:before {
 // ========= Repositories =========
 
 .repositories {
+  #repo-list {
+    margin-bottom: 15px;
+  }
+
   .repository {
     min-height: 130px;
     padding-left: 15px;
@@ -500,10 +511,8 @@ header.masthead:before {
 // ========= Contact =========
 
 .contact-link {
-  height: 100px;
   text-decoration: none;
   color: #333;
-  padding-top: 10px;
   cursor: pointer;
 
   &:hover {
