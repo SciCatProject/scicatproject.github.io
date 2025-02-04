@@ -121,6 +121,10 @@ team:
       company: Paul Scherrer Institut (PSI)
       role: Release Jobs Leader
       url: https://github.com/sbliven
+    - name: Despina Adamopoulou 
+      company: EMPA Material Science and Technology
+      role: Website Leader
+      url: https://github.com/despadam
     - name: Igor Khokhriakov
       company: Deutsches Elektronen-Synchrotron (DESY)
       role: Release Search UI Leader
@@ -131,9 +135,9 @@ repositories:
   - name: frontend
   - name: scicat-backend-next
   - name: scicatlive
+  - name: branding
   - name: scitacean
   - name: pyscicat
-  - name: scicat-sdk
 
 
 documentation:
