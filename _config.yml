@@ -23,12 +23,11 @@ email: max.novelli@ess.eu
 description: Advance your data to advance your science
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_organization: SciCatProject
+contact_email: scicat-info@lists.psi.ch
 
 version: 2.2.1
 last_updated: 2024/01/09
-
-github_organization: SciCatProject
-
 
 backend_release:
   url: https://github.com/SciCatProject/scicat-backend-next
@@ -43,53 +42,65 @@ facilities:
   - name: European Spallation Source
     image: /assets/images/facilities/ess_logo.png
     url: https://www.ess.eu
-    contactName: Max Novelli
-    contactEmail: max.novelli@ess.eu
+    contacts:
+      - name: Max Novelli
+        email: max.novelli@ess.eu
   - name: Paul Scherrer Institut
     image: /assets/images/facilities/psi_logo.svg
     url: https://www.psi.ch
-    contactName: Carlo Minotti
-    contactEmail: scicat-help@lists.psi.ch
+    contacts:
+      - name: Carlo Minotti
+        email: scicat-help@lists.psi.ch
   - name: MAX IV
     image: /assets/images/facilities/maxiv_logo.png
-    url: https://www.maxiv.lu.se/  
-    contactName: Carla Takahashi
-    contactEmail: carla.takahashi@maxiv.lu.se
+    url: https://www.maxiv.lu.se/
+    contacts:
+      - name: Carla Takahashi
+        email: carla.takahashi@maxiv.lu.se
   - name: Rosalind Franklin Institute
     image: /assets/images/facilities/rfi_logo.png
     url: https://www.rfi.ac.uk/
-    contactName: Laura Shemilt
-    contactEmail: laura.shemilt@rfi.ac.uk
+    contacts:
+      - name: Laura Shemilt
+        email: laura.shemilt@rfi.ac.uk
   - name: Heinz Maier-Leibnitz Zentrum
     image: /assets/images/facilities/mlz_logo.png
     url: https://mlz-garching.de/
-    contactName: Björn Pedersen
-    contactEmail: bjoern.pedersen@frm2.tum.de
+    contacts:
+      - name: Björn Pedersen
+        email: bjoern.pedersen@frm2.tum.de
   - name: Advanced Light Source
     image: /assets/images/facilities/als_logo.png
     url: https://als.lbl.gov/
-    contactName: Dylan McReynolds
-    contactEmail: dmcreynolds@lbl.gov
+    contacts:
+      - name: Dylan McReynolds
+        email: dmcreynolds@lbl.gov
   - name: Deutsches Elektronen-Synchrotron
     image: /assets/images/facilities/desy_logo.png
-    url: https://www.desy.de/  
-    contactName: Regina Hinzmann
-    contactEmail: regina.hinzmann@desy.de
+    url: https://www.desy.de/
+    contacts:
+      - name: Regina Hinzmann
+        email: regina.hinzmann@desy.de
   - name: Synchrotron SOLEIL
     image: /assets/images/facilities/soleil_logo.png
     url: https://www.synchrotron-soleil.fr
-    contactName: # Javier Perez, Majid Ounsy, Patrick Madela
-    contactEmail:
+    contacts: 
+      - name: Patrick Madela
+        email: patrick.madela@synchrotron-soleil.fr
   - name: DAta from PHoton and Neutron Experiments
     image: /assets/images/facilities/daphne_logo.png
     url: https://www.daphne4nfdi.de
-    contactName: Regina Hinzmann, Nicolas Hayen
-    contactEmail: regina.hinzmann@desy.de; hayen@physik.uni-kiel.de
+    contacts:
+      - name: Regina Hinzmann
+        email: regina.hinzmann@desy.de
+      - name: Nicolas Hayen
+        email: hayen@physik.uni-kiel.de
   - name: Helmholtz Zentrum Dresden Rossendorf
     image: /assets/images/facilities/hzdr_logo.png
     url: https://www.hzdr.de/
-    contactName: Oliver Knodel
-    contactEmail: o.knodel@hzdr.de
+    contacts:
+      - name: Oliver Knodel
+        email: o.knodel@hzdr.de
 
 
 team:

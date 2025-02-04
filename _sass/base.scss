@@ -247,6 +247,7 @@ header.masthead:before {
     .contact-name:hover {
       text-decoration: underline;
       cursor: pointer;
+      color: #27aae1;
     }
   }
 }
@@ -503,6 +504,7 @@ header.masthead:before {
   text-decoration: none;
   color: #333;
   padding-top: 10px;
+  cursor: pointer;
 
   &:hover {
     color: #27aae1;

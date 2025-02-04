@@ -8,8 +8,10 @@
             <img class="facility-logo" src="{{ facility.image }}" alt="{{ facility.name }}">
           </a>
           <div class="details">
-            <p class="contact-name mt-2 mb-1" onclick="window.location.href='mailto:{{ facility.contactEmail }}'">
-              {{ facility.contactName | default: "Contact Name" }}
+            <p class="mt-2 mb-1">
+              {% for contact in facility.contacts %}
+                <span class="contact-name" onclick="window.location.href='mailto:{{ contact.email }}'">{{ contact.name }}</span>{% if forloop.last == false %}, {% endif %}
+              {% endfor %}
             </p>
           </div>
         </div>
