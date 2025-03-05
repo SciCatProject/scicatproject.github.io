@@ -193,6 +193,22 @@ header.masthead:before {
   p {
     text-align: center;
   }
+
+  a {
+    color: #27aae1;
+  }
+
+  .scicatcon-logo-container {
+    display: flex;
+  }
+
+  .scicatcon-logo {
+    margin: auto;
+
+    img {
+      width: 400px;
+    }
+  }
 }
 
 // ========= Releases =========

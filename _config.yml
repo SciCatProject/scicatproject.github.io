@@ -25,9 +25,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_organization: SciCatProject
 contact_email: scicat-info@lists.psi.ch
+slack_channel: https://scicat.slack.com/archives/C08GYULHELQ
+scicatcon_link: https://indico.ess.eu/event/3731/
 
-version: 2.2.1
-last_updated: 2024/01/09
+version: 3.0.0
+last_updated: 2025/03/06
 
 backend_release:
   url: https://github.com/SciCatProject/scicat-backend-next
@@ -125,10 +127,10 @@ team:
       company: EMPA Material Science and Technology
       role: Website Leader
       url: https://github.com/despadam
-    - name: Igor Khokhriakov
-      company: Deutsches Elektronen-Synchrotron (DESY)
-      role: Release Search UI Leader
-      url: https://github.com/Ingvord
+    - name: Open Position
+      company: Accepting candidates
+      role: UI/UX Leader
+      url: 
 
 
 repositories:
