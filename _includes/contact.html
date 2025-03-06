@@ -1,0 +1,27 @@
+<section id="contact" class="contact">
+  <div class="container mb-3">
+    <h1 class="mt-5 mb-5">Contact</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 text-center">
+        <div class="contact-link" onclick="window.location.href='mailto: {{ site.contact_email }}'">
+          <div class="contact-link-img"> 
+            <img src="../assets/svgs/email-arrow-right-outline.svg" alt="Email">
+          </div>
+          <p>Send an Email</p>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center">
+        <a href="https://github.com/orgs/SciCatProject/discussions" class="contact-link" target="_blank">
+          <img src="../assets/images/github_logo.jpg" alt="GitHub Logo">
+          <p>GitHub Discussions</p>
+        </a>
+      </div>
+      <div class="col-lg-3 text-center">
+        <a href="{{ site.slack_channel }}" class="contact-link" target="_blank">
+          <img src="../assets/images/slack_logo.jpg" alt="Slack Logo">
+          <p>Slack Channel</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

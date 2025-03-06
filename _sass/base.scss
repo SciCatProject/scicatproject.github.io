@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
   background-color: #f8f9fa;
   padding-top: 75px;
 }
@@ -16,20 +16,88 @@ main > div {
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-weight: 700;
 }
 
+div.container {
+  margin-bottom: 3rem;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 6px 3px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-md {
+  flex: 0 0 auto;
+  width: 45%;
+}
+
+.card-lg {
+  flex: 0 0 auto;
+  width: 55%;
+}
+
+.card-xl {
+  flex: 0 0 auto;
+  width: 67%;
+}
+
+@media (max-width: 1200px) {
+  .card-md {
+    width: 90%;
+  }
+
+  .card-lg {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-xl {
+    width: 100%;
+  }
+}
+
+.section-breaker {
+  background-color: #041526;
+  opacity: 0.9;
+  height: 0.3rem !important;
+}
+
+.show-all-button {
+  background-color: transparent;
+  color: #27aae1;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    color: #808285;
+  }
+}
+
+// ========= Navbar ========= 
 
 .navbar {
   .navbar-header {
     height: 50px;
   }
+
   .navbar-brand {
     position: absolute;
     top: 5px;
     left: 5px;
+
+    img {
+      height: 45px;
+    }
   }
 
   #nav-logo {
@@ -40,38 +108,43 @@ h1, h2, h3, h4, h5 {
     padding-left: 120px;
     padding-right: 120px;
   }
-  @media (max-width: 991px) {
+
+  @media (max-width: 1300px) {
     .navbar-menu {
       padding: 5px 20px;
-      margin-top: 50px;
     }
+  
     li {
       text-align: center;
     }
   }
+
   .navbar-toggler {
     position: absolute;
     top: 1rem;
     right: 0.5rem;
   }
+
+  .active {
+    background-color: #27aae1 !important;
+  }
 }
+
+// ========= Header ========= 
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("/assets/images/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
   padding-top: 2rem;
-  height: 62vh;
+  height: 90vh;
 
   .overlay {
     position: absolute;
-    background-color: #212529;
+    background-color: #041526;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   .container {
@@ -84,224 +157,424 @@ header.masthead {
     transform: translateY(-50%);
 
     img {
-      width: 55%;
-    }
-    h1 {
-      margin-bottom: 0.5rem !important;
-    }
-  }
-
-}
-
-.pills-icons {
-  .container {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .pills-icons-item {
-    max-width: 20rem;
-
-    .pills-icons-icon {
-      height: 7rem;
-
-      i {
-        font-size: 4.5rem;
-      }
-    }
-  }
-
-  .pills-icons-item:hover .pills-icons-icon i {
-    font-size: 5rem;
-  }
-
-}
-
-.features {
-  .features-row {
-    height: 20vh !important;
-
-    @media (max-width: 985px) {
-      height: 30vh !important;
-    }
-  }
-
-  .features-item {
-    overflow: hidden;
-    position: relative;
-    
-    .features-image {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.2;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .features-content {
-      position: relative;
-      padding: 1rem;
-      height: 100%;
-
-      .features-content-text {
-        width: 95%;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-
-        p {
-          font-size: 1.25rem;
-        }
-      }
-
-      .attribution {
-        position: absolute;
-        right: 1rem;
-        bottom: -0.9rem;
-        font-size: 0.7rem;
-      }
+      width: 65%;
     }
   }
 }
 
-.latest {
+header.masthead:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('/assets/images/bg-masthead.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+// ========= Mission =========
+
+.mission {
+ p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 3%;
+ }
+}
+
+// ========= News =========
+
+.news {
+  p {
+    text-align: center;
+  }
+
+  a {
+    color: #27aae1;
+  }
+
+  .scicatcon-logo-container {
+    display: flex;
+  }
+
+  .scicatcon-logo {
+    margin: auto;
+
+    img {
+      width: 400px;
+    }
+  }
+}
+
+// ========= Releases =========
+
+.releases {
   margin-top: 3rem;
   margin-bottom: 4rem;
   padding: 7px 0;
-  background-color: rgba(0, 0, 0, 0.831);
+  background-color: #041526;
+  opacity: 0.9;
   color: white;
   text-align: center;
 
-  h4 {
-    font-weight: 500;
-  }
-  a {
-    color: white;
+  div.card {
+    height: 5rem;
+    line-height: 5rem;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: unset;
+    flex-direction: unset;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 6px 3px auto;
+    box-shadow: 0 4px 6px #141414;
+    max-width: 60%;
+    padding: 0;
+
+    a {
+      color: white;
+    }
+
+    div {
+      display: inline;
+    }
+
+    a#release_backend_zip, a#release_backend_tar,
+    a#release_frontend_zip, a#release_frontend_tar {
+      img {
+        height: 28px;
+      }
+    }
   }
 }
+
+// ========= Facilities =========
 
 .facility {
-  margin-bottom: 30px !important;
-}
+  width: 400px;
+  min-height: 180px;
 
-.facilities {
-  a {
-    color: var(--bs-body-color);
+  .facility-logo {
+    height: 100px;
+  }
+
+  .details {
+    flex-grow: 1;
+    margin-top: 15px;
+
+    .contact-name {
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    .contact-name:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: #27aae1;
+    }
   }
 }
+
+// ========= Team =========
 
 .team {
   .leader {
-    height: 150px;
+    width: 400px;
 
     .leadership {
       font-size: 1.2rem;
-      padding: 25px 0 0 0;
-
-      @media (max-width: 1000px) {
-        padding: 5px 0 20px 0;
-      }
+      margin: 6px 0 12px 0 ;
     }
+
     .person {
       font-size: 1.5rem;
       font-weight: 500;
     }
+
     .company {
       font-size: 0.9rem;
       font-style: italic;
-    }
-    .email {
-      font-size: 0.8rem;
+      margin-bottom: 6px;
     }
   }
 
-  .collaborator {
-    height: 150px;
+  .leader:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
 
-    .person {
-      font-size: 1.3rem;
-      margin-top: 12%;
+  .contributors {
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #27aae1;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+      margin: 0 auto;
+    }
+  
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    .members-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .member {
+      position: relative;
+      margin: 10px;
+      display: inline-block;
+    }
+  
+    .member img {
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .member .popup {
+      position: absolute;
+      bottom: 112%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      color: #24292f;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: left;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 10;
 
-      @media (max-width: 992px) {
-        margin-top: 5%;
+      p {
+        margin-bottom: 0;
       }
     }
-    .company {
-      font-size: 0.9rem;
-      font-style: italic;
+  
+    .member .popup:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 6px;
+      border-style: solid;
+      border-color: white transparent transparent transparent;
     }
-    .email {
-      font-size: 0.8rem;
+  
+    .member:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    .show-more-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      #showAllBtn {
+        display: none;
+      }
+    }
+
+    .show-members-note {
+      font-size: 0.9rem;
+      margin-top: 20px;
     }
   }
 }
 
-aside.section-breaker {
-  height: 0.5rem;
+// ========= Repositories =========
+
+.repositories {
+  #repo-list {
+    margin-bottom: 15px;
+  }
+
+  .repository {
+    min-height: 130px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .repository.card { 
+    .card-content {
+      display: flex;
+      width: 100%;
+    }
+
+    .repo-logo {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin-right: 15px;
+      height: 120px;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    .repo-details {
+      text-align: left;
+      width: 100%;
+
+      .repo-name {
+        font-size: 1.2em;
+        color: #27aae1;
+      }
+
+      .repo-title {
+        font-size: 1.5rem;
+        margin: 0;
+        margin-top: 5px;
+        text-align: left;
+
+        a {
+          text-decoration: none;
+          color: #333;
+
+          &:hover {
+            color: #27aae1;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .repo-description {
+        font-size: 1rem;
+        margin: 15px 0;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .repo-links {
+        display: flex;
+        gap: 20px;
+
+        .repo-link {
+          display: flex;
+          color: #808285;
+          font-size: 0.8rem;
+
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 3px;
+          }
+
+          a {
+            text-decoration: none;
+            color: #27aae1;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 770px) {
+        .repo-links {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
+// ========= Documentation =========
 
-.effort {
-  text-align: left;
+.documentation {
+  .documentation-section {
+    min-height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  a {
+    color: #27aae1;
+  }
 
   .name {
-    font-size: 1.5rem;
+    font-size: 1.2em;
+    margin-bottom: 6px;
   }
 
-  .effort-name {
-    border-bottom: 1px lightgray solid;
-    margin-bottom: 1rem;
-  }
-
-  .effort-info {
-    padding-bottom: 0.5rem;
-    border-bottom: 1px lightgray solid;
-    margin-bottom: 1rem;
-
-    .text {
-      text-align: left;
-
-      @media (max-width: 1000px) {
-        text-align: center;
-      }
-
-      a {
-        color: var(--bs-body-color) !important;
-      }
-    }
-  }
-
-  .leader-label {
-    display: inline-block;
-    width: 25%;
-    text-align: right;
-    padding-right: 0.5rem;
-  }
-
-  .leader {
-    width: 50%;
-    text-align: left;
-    padding-left: 0.5rem;
-    display: inline-block;
+  .text {
+    margin-top: 15px;
   }
 }
 
-section#resources {
-  .resource {
-    margin-bottom: 10px;
+// ========= Contact =========
 
-    a {
-      color: var(--bs-body-color) !important;
+.contact-link {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+
+  &:hover {
+    color: #27aae1;
+  }
+
+  .contact-link-img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+    img {
+      width: 50px;
+      border-radius: 0%;
+      box-shadow: none;
     }
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    margin: 15px 0 20px 0;
   }
 }
 
-div.container {
-  margin-bottom: 3rem;
+// ========= Footer =========
+
+.footer-container {
+  background-color: #041526;
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  min-height: 15vh;
+
+  .row {
+    width: 90%;
+    margin: auto;
+    padding-top: 6vh;
+  }
 }

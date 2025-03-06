@@ -1,15 +1,21 @@
 <section id="facilities" class="facilities text-center bg-light">
- <div class="container mb-3">
-  <h1 class="mt-5 mb-5">Facilities</h1>
-  <div class="row">
-  {% for facility in site.facilities %}
-  <div class="col-lg-4 facility mb-5 mb-lg-0">
-   <a href="{{ facility.url }}" target="_blank">
-    <img class="img-fluid rounded-3 mb-3" src="{{ facility.image }}">
-    <h5>{{ facility.name }}</h5>
-  </a>
- </div>
- {% endfor %}
+  <div class="container mb-3">
+    <h1 class="mt-5 mb-5">Facilities</h1>
+    <div class="row justify-content-center">
+      {% for facility in site.facilities %}
+        <div class="facility col-lg-4 card">
+          <a href="{{ facility.url }}" target="_blank">
+            <img class="facility-logo" src="{{ facility.image }}" alt="{{ facility.name }}">
+          </a>
+          <div class="details">
+            <p class="mt-2 mb-1">
+              {% for contact in facility.contacts %}
+                <span class="contact-name" onclick="window.location.href='mailto:{{ contact.email }}'">{{ contact.name }}</span>{% if forloop.last == false %}, {% endif %}
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
-
