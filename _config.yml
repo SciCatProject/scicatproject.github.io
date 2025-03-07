@@ -20,60 +20,16 @@
 
 title: SciCat
 email: max.novelli@ess.eu
-slogan: Manage and annotate your scientific data
-description: >- # this means to ignore newlines until "baseurl:"
-  SciCat (Scientific Catalog) and its ecosystem provides all the right tools to ingest, curate, maintain and publish all your scientific metadata.
+description: Advance your data to advance your science
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_organization: SciCatProject
+contact_email: scicat-info@lists.psi.ch
+slack_channel: https://scicat.slack.com/archives/C08GYULHELQ
+scicatcon_link: https://indico.ess.eu/event/3731/
 
-version: 2.2.1
-last_updated: 2024/01/09
-
-pill_1:
-  icon: fa-gears
-  title: Ingest
-  oneline: Automate data importing
-
-pill_2:
-  icon: fa-tag
-  title: Annotate
-  oneline: Enrich your data
-
-pill_3:
-  icon: fa-magnifying-glass
-  title: Find
-  oneline: Browse and search your data
-
-pill_4:
-  icon: fa-globe
-  title: Publish
-  oneline: Add DOI and share
-
-
-feature_1:
-  image: /assets/images/ball.jpg
-  title: FAIR data
-  text: SciCat is an important building block to implement a FAIR data management policy
-  attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=457334">Pixabay</a>)
-
-feature_2:
-  image: /assets/images/extend.jpg
-  title: Integrate, Extend, and Automate
-  text: Easily extend functionality through the RESTful OpenAPI. Automate connecting to message systems.  
-  attribution: (Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1307227">Pixabay</a>)
-
-feature_3:
-  image: /assets/images/stack.jpg
-  title: Modern Technology Stack
-  text: Built on Node.js, Angular, Nest.js and MongoDB
-  attribution: (Image by <a href="https://pixabay.com/users/ar130405-423602/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">ar130405</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2082642">Pixabay</a>) 
-
-feature_4:
-  image: /assets/images/open.jpg
-  title: Open Source
-  text: Fully open source with a committed and welcoming team of developers.
-  attribution: (Photo by <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim Mossholder</a> on <a href="https://unsplash.com/s/photos/open-source?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>)
-
+version: 3.0.0
+last_updated: 2025/03/06
 
 backend_release:
   url: https://github.com/SciCatProject/scicat-backend-next
@@ -85,128 +41,129 @@ frontend_release:
 
 
 facilities:
-  - image: /assets/images/ess_logo.png
+  - name: European Spallation Source
+    image: /assets/images/facilities/ess_logo.png
     url: https://www.ess.eu
-    name: European Spallation Source
-  - image: /assets/images/psi_logo.png
+    contacts:
+      - name: Max Novelli
+        email: max.novelli@ess.eu
+  - name: Paul Scherrer Institut
+    image: /assets/images/facilities/psi_logo.svg
     url: https://www.psi.ch
-    name: Paul Scherrer Institut
-  - image: /assets/images/maxiv_logo.png
+    contacts:
+      - name: Carlo Minotti
+        email: scicat-help@lists.psi.ch
+  - name: MAX IV
+    image: /assets/images/facilities/maxiv_logo.png
     url: https://www.maxiv.lu.se/
-    name: MAX IV
-  - image: /assets/images/rfi_logo.png
+    contacts:
+      - name: Carla Takahashi
+        email: carla.takahashi@maxiv.lu.se
+  - name: Rosalind Franklin Institute
+    image: /assets/images/facilities/rfi_logo.png
     url: https://www.rfi.ac.uk/
-    name: Rosalind Franklin Institute
-  - image: /assets/images/mlz_blue_rgb.png
+    contacts:
+      - name: Laura Shemilt
+        email: laura.shemilt@rfi.ac.uk
+  - name: Heinz Maier-Leibnitz Zentrum
+    image: /assets/images/facilities/mlz_logo.png
     url: https://mlz-garching.de/
-    name: Heinz Maier-Leibnitz Zentrum
-  - image: /assets/images/als_logo.png
+    contacts:
+      - name: Björn Pedersen
+        email: bjoern.pedersen@frm2.tum.de
+  - name: Advanced Light Source
+    image: /assets/images/facilities/als_logo.png
     url: https://als.lbl.gov/
-    name: Advanced Light Source
-  - image: /assets/images/desy_logo.png
+    contacts:
+      - name: Dylan McReynolds
+        email: dmcreynolds@lbl.gov
+  - name: Deutsches Elektronen-Synchrotron
+    image: /assets/images/facilities/desy_logo.png
     url: https://www.desy.de/
-    name: Deutsches Elektronen-Synchrotron DESY
-  - image: /assets/images/soleil_logo.png
+    contacts:
+      - name: Regina Hinzmann
+        email: regina.hinzmann@desy.de
+  - name: Synchrotron SOLEIL
+    image: /assets/images/facilities/soleil_logo.png
     url: https://www.synchrotron-soleil.fr
-    name: Synchrotron SOLEIL
-  - image: /assets/images/daphne_logo.png
+    contacts: 
+      - name: Patrick Madela
+        email: patrick.madela@synchrotron-soleil.fr
+  - name: DAta from PHoton and Neutron Experiments
+    image: /assets/images/facilities/daphne_logo.png
     url: https://www.daphne4nfdi.de
-    name: DAta from PHoton and Neutron Experiments
+    contacts:
+      - name: Regina Hinzmann
+        email: regina.hinzmann@desy.de
+      - name: Nicolas Hayen
+        email: hayen@physik.uni-kiel.de
+  - name: Helmholtz Zentrum Dresden Rossendorf
+    image: /assets/images/facilities/hzdr_logo.png
+    url: https://www.hzdr.de/
+    contacts:
+      - name: Oliver Knodel
+        email: o.knodel@hzdr.de
 
 
 team:
   leaders:
     - name: Max Novelli
-      company: European Spallation Source
-      email: max dot novelli at ess dot eu
+      company: European Spallation Source (ESS)
       role: Project Leader
-    - name: Laura Shemilt
-      company: Rosalind Franklin Institute
-      email:
+      url: https://github.com/nitrosx
+    - name: Regina Hinzmann
+      company: Deutsches Elektronen-Synchrotron (DESY)
       role: Documentation Leader
+      url: https://github.com/rkweehinzmann
     - name: Björn Pedersen
-      company: Heinz Maier-Leibnitz Zentrum 
-      email:
+      company: Heinz Maier-Leibnitz Zentrum (MLZ)
       role: PR and Issue Review Leader
+      url: https://github.com/bpedersen2
     - name: Spencer Bliven
-      company: Paul Scherrer Institut
-      email: 
+      company: Paul Scherrer Institut (PSI)
       role: Release Jobs Leader
-    - name: Igor Khokhriakov
-      company: DESY
-      email: 
-      role: Release Search UI Leader
+      url: https://github.com/sbliven
     - name: Carlo Minotti
-      company: Paul Scherrer Institut
-      email: 
+      company: Paul Scherrer Institut (PSI)
       role: ScicatLive Leader
-  collaborators:
-    - name: Junjie Quan
-      company: European Spallation Source
-      email:
-    - name: Dylan McReynolds
-      company: Advance Light Source
-      email:
-    - name: Javier Perez
-      company: Synchrotron SOLEIL
-      email: javier dot perez at synchrotron dash soleil dot fr
-    - name: Majid Ounsy
-      company: Synchrotron SOLEIL
-      email: majid dot ounsy at synchrotron dash soleil dot fr
-    - name: Patrick Madela
-      company: Synchrotron SOLEIL
-      email: patrick dot madela at synchrotron soleil dot fr
+      url: https://github.com/minottic
+    - name: Despina Adamopoulou 
+      company: EMPA Material Science and Technology
+      role: Website Leader
+      url: https://github.com/despadam
+    - name: Open Position
+      company: Accepting Candidates
+      role: UI/UX Leader
+      url: 
 
 
-efforts:
-  - name: Release Jobs
-    type: release
-    leader: Daphne Van Dijken
-    description: Complete migration and refactor of jobs in backend v4.x
-    link: https://github.com/orgs/SciCatProject/projects/3
-  - name: Release Search UI
-    type: release
-    leader: Igor Khokhriakov
-    description: Improving usability of frontend search UI and adding needed functionality to backend
-    link: https://github.com/orgs/SciCatProject/projects/5
-  - name: pySciCat
-    type: official project
-    description: Low level python library that offers each endpoint as function in python. It requires a good level of knowledge of SciCat backend. Suggested for developing third party applications that will interface with SciCat, like data ingestors, dedicated custom UIs, or ETL processes retrieving data from and storing results in SciCat
-    link: https://github.com/SciCatProject/pyscicat
-  - name: Scitacean
-    type: official project
-    description: High level python library hiding all the inner intricacies of SciCat. It is designed for users concentrating on data analysis, exploratory tasks. It allows the user to transparently retrieve existing datasets and creating new ones with only few lines of code. It also provide functionalities for data transferring. 
-    link: https://github.com/SciCatProject/scitacean
-  - name: ScicatLive
-    type: official project
-    description: Standalone installation of SciCat and dependencies based on docker compose
-    link: https://scicatproject.github.io/scicatlive/latest/
+repositories:
+  - name: frontend
+  - name: scicat-backend-next
+  - name: scicatlive
+  - name: branding
+  - name: scitacean
+  - name: pyscicat
 
 
 documentation:
-
-  - name: Official github project
-    description: All software packages that are part of the SciCat ecosystem are in the Github project. For documentation see each project.
-    url: https://github.com/ScicatProject
-  - name: User Guides
-    description: Experience SciCat as a user
-    url: https://scicatproject.github.io/documentation/
-  - name: Get Started
+  main:
+    name: Get Started with SciCat Live
     description: To get started with a standalone installation of SciCat and to know more about how to add it to your infrastructure visit the SciCat Live repository.
     url: https://scicatproject.github.io/scicatlive/latest/
-  - name: Backend
-    description: For developer documentation on the SciCat backend. 
-    url: https://github.com/ScicatProject/scicat-backend-next
-  - name: Frontend
-    description: For more information on the SciCat frontend and developer documentation.
-    url: https://github.com/ScicatProject/frontend
-  - name: pySciCat
-    description: The pyscicat project is a python client library to interact with the SciCat backend. 
-    url: https://scicatproject.github.io/pyscicat/
-  - name: Scitacean 
-    description: Scictacean is a high level python packaging for uploading and downloading data to and from SciCat. 
-    url: https://scicatproject.github.io/scitacean/
-
+  others:
+    - name: User Guides
+      description: Experience SciCat as a user.
+      url: https://scicatproject.github.io/documentation/
+    - name: Ingestor
+      description: Ingesting Data into SciCat.
+      url: https://github.com/SciCatProject/documentation/tree/master/Ingestor
+    - name: Developer
+      description: The SciCat Data Catalogue Developer Guide.
+      url: https://github.com/SciCatProject/documentation/tree/master/Development
+    - name: Operator
+      description: The SciCat Data Catalogue Operator Guide.
+      url: https://github.com/SciCatProject/documentation/tree/master/Operator
 
 
 # Build settings

@@ -1,0 +1,128 @@
+<section id="repositories" class="repositories text-center bg-light">
+  <div class="container mb-3">
+    <h1 class="mt-5 mb-5">Repositories</h1>
+    <div id="git-org" class="row justify-content-center"></div>
+    <div id="repo-list" class="row justify-content-center"></div>
+    <button class="show-all-button" onclick="window.open('https://github.com/orgs/{{ site.github_organization }}/repositories', '_blank')">View all repositories</button>
+  </div>
+</section>
+
+<script>
+  const fetchOrgRepos = async (orgName, repoNames) => {
+    const response = await fetch(`https://api.github.com/orgs/${orgName}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const org = await response.json();
+
+    let repositories = []
+    for (let repoName of repoNames) {
+      const response = await fetch(`https://api.github.com/repos/${orgName}/${repoName}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      repositories.push(await response.json());
+    }
+    org.repositories = repositories;
+    console.log("Organization:", org);
+    return org;
+  };
+
+  const displayAll = (organization) => {
+    const gitOrg = document.getElementById("git-org");
+    gitOrg.innerHTML = "";
+
+    const orgItem = document.createElement("div");
+    orgItem.className = "repository card card-lg";
+    orgItem.innerHTML = `
+      <div class="card-content">
+        <div class="repo-logo">
+          <a href="${organization.html_url}" target="_blank">
+            <img src="assets/images/SciCat_logo_icon.svg" alt="Repository Logo">
+          </a>
+        </div>
+        <div class="repo-details">
+          <h3 class="repo-title">
+            <a href="${organization.html_url}" target="_blank">${organization.name}</a>
+          </h3>
+          <p class="repo-description">${organization.description}</p>
+          <div class="repo-links">
+            <div class="repo-link">
+              <img src="assets/svgs/account-multiple-outline.svg" alt="Followers">
+              <div>${organization.followers} followers</div>
+            </div>
+            <div class="repo-link">
+              <img src="assets/svgs/book-multiple-outline.svg" alt="Repositories">
+              <div>${organization.public_repos} public repositories</div>
+            </div>
+            <div class="repo-link">
+              <img src="assets/svgs/link-variant.svg" alt="Link">
+              <a href="${organization.html_url}" target="_blank">${organization.html_url}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    gitOrg.appendChild(orgItem);
+
+    const repoList = document.getElementById("repo-list");
+    repoList.innerHTML = "";
+
+    organization.repositories.forEach(repo => {
+      const repoItem = document.createElement("div");
+      repoItem.className = "repository card card-md";
+      repoItem.innerHTML = `
+        <div class="card-content">
+          <div class="repo-details">
+            <a href="${repo.html_url}" target="_blank" class="repo-name">${repo.name}</a>
+            <p class="repo-description">${repo.description}</p>
+            <div class="repo-links">
+              ${repo.language ? `
+              <div class="repo-link">
+                <img src="assets/svgs/code-braces.svg" alt="Language">
+                <p>${repo.language}</p>
+              </div>` : ''}
+              <div class="repo-link">
+                <img src="assets/svgs/star-outline.svg" alt="Stars">
+                <p>${repo.stargazers_count} stars</p>
+              </div>
+              ${repo.license && repo.license.key !== "other" ? `
+              <div class="repo-link">
+                <img src="assets/svgs/scale-balance.svg" alt="License">
+                <p>${repo.license.spdx_id}</p>
+              </div>` : ''}
+              <div class="repo-link">
+                <img src="assets/svgs/source-fork.svg" alt="Forks">
+                <p>${repo.forks_count} forks</p>
+              </div>
+              <div class="repo-link">
+                <img src="assets/svgs/source-merge.svg" alt="Updated">
+                <p>${new Date(repo.pushed_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      repoList.appendChild(repoItem);
+    });
+  };
+
+  (async () => {
+    try {
+      const orgName = "{{ site.github_organization }}";
+      const repoNames = [
+        {% for repository in site.repositories %}
+          "{{ repository.name }}",
+        {% endfor %}
+      ];
+      const data = await fetchOrgRepos(orgName, repoNames);      
+      displayAll(data);
+    } catch (error) {
+      console.error("Error fetching repositories:", error);
+    }
+  })();
+</script>
