@@ -25,7 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://scicatproject.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_organization: SciCatProject
 contact_email: scicat-info@lists.psi.ch
-slack_channel: https://scicat.slack.com/archives/C08GYULHELQ
+slack_invite: https://join.slack.com/t/scicat/shared_invite/zt-251efp7t2-8IqFDo3sPN8TYWgKNywccg
 scicatcon_link: https://indico.ess.eu/event/3731/
 
 version: 3.0.0
