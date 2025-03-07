@@ -1,6 +1,7 @@
 ---
 permalink: /404.html
 layout: default
+title: 404
 ---
 
 <style type="text/css" media="screen">
@@ -15,11 +16,19 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
+  p {
+    font-size: 1.2em;
+  }
+  a {
+    color: #27aae1 !important;
+  }
+  #footer { 
+    display: none;
+  }
 </style>
 
 <div class="container">
   <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <h2>Page not found</h2>
+  <p>Back to the <a href="{{ '/' | relative_url }}">homepage</a>.</p>
 </div>
