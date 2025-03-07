@@ -123,12 +123,16 @@ team:
       company: Paul Scherrer Institut (PSI)
       role: Release Jobs Leader
       url: https://github.com/sbliven
+    - name: Carlo Minotti
+      company: Paul Scherrer Institut (PSI)
+      role: ScicatLive Leader
+      url: https://github.com/minottic
     - name: Despina Adamopoulou 
       company: EMPA Material Science and Technology
       role: Website Leader
       url: https://github.com/despadam
     - name: Open Position
-      company: Accepting candidates
+      company: Accepting Candidates
       role: UI/UX Leader
       url: 
 
