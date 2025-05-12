@@ -18,4 +18,16 @@
       {% endfor %}
     </div>
   </div>
+  <div class="container mb-3">
+    <h2 class="mt-5 mb-5">Industry Partners</h2>
+    <div class="row justify-content-center">
+      {% for partner in site.partners %}
+        <div class="partner col-lg-4 card">
+          <a href="{{ partner.url }}" target="_blank">
+            <img class="partner-logo" src="{{ partner.image }}" alt="{{ partner.name }}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

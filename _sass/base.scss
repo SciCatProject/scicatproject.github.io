@@ -281,6 +281,17 @@ header.masthead:before {
   }
 }
 
+// ========= Industry Partners =========
+
+.partner {
+  width: 400px;
+  min-height: 180px;
+
+  .partner-logo {
+    height: 150px;
+  }
+}
+
 // ========= Team =========
 
 .team {
