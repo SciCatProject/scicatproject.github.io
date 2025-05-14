@@ -106,9 +106,9 @@ facilities:
 
 
 partners:
-  - name: DECTRIS
-    image: /assets/images/partners/dectris.svg
-    url: https://www.dectris.ch/en/
+  - name: DECTRIS CLOUD
+    image: /assets/images/partners/dectris_cloud.svg
+    url: https://www.dectris.cloud/
 
 
 team:

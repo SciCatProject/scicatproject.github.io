@@ -67,7 +67,13 @@ div.container {
 .section-breaker {
   background-color: #041526;
   opacity: 0.9;
-  height: 0.3rem !important;
+  height: 0.2rem !important;
+}
+
+.secondary-breaker {
+  background-color: #0415263b;
+  opacity: 0.9;
+  height: 0.1rem !important;
 }
 
 .show-all-button {

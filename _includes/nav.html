@@ -18,11 +18,13 @@
     }
   }
 
-  // Given a specific element Id, check if the element is currenty visible on the screen
+  // Given a specific element Id, check if more than 50% of the element is currently visible on the screen
   function isElementVisible(elemId) {
     let elm = document.getElementById(elemId).getBoundingClientRect();
     let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(elm.bottom < 0 || elm.top - viewHeight >= 0);
+    let elementHeight = elm.height || (elm.bottom - elm.top);
+    let visibleHeight = Math.min(elm.bottom, viewHeight) - Math.max(elm.top, 0);
+    return visibleHeight > elementHeight / 2;
   }
 
   /*
