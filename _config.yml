@@ -28,7 +28,7 @@ contact_email: scicat-info@lists.psi.ch
 slack_invite: https://join.slack.com/t/scicat/shared_invite/zt-251efp7t2-8IqFDo3sPN8TYWgKNywccg
 scicatcon_link: https://indico.ess.eu/event/3731/
 
-version: 3.0.0
+version: 3.1.0
 last_updated: 2025/03/06
 
 backend_release:
