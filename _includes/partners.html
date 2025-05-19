@@ -1,0 +1,14 @@
+<section id="partners" class="partners text-center bg-light">
+  <div class="container mb-3">
+    <h1 class="mt-5 mb-5">Industry Partners</h1>
+    <div class="row justify-content-center">
+      {% for partner in site.partners %}
+        <div class="partner col-lg-4 card">
+          <a href="{{ partner.url }}" target="_blank">
+            <img class="partner-logo" src="{{ partner.image }}" alt="{{ partner.name }}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

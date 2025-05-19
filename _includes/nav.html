@@ -4,6 +4,7 @@
     mission: "nav-link-mission",
     news: "nav-link-news",
     facilities: "nav-link-facilities",
+    partners: "nav-link-partners",
     team: "nav-link-team",
     repositories: "nav-link-repositories",
     documentation: "nav-link-documentation",
@@ -18,11 +19,13 @@
     }
   }
 
-  // Given a specific element Id, check if the element is currenty visible on the screen
+  // Given a specific element Id, check if more than 50% of the element is currently visible on the screen
   function isElementVisible(elemId) {
     let elm = document.getElementById(elemId).getBoundingClientRect();
     let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(elm.bottom < 0 || elm.top - viewHeight >= 0);
+    let elementHeight = elm.height || (elm.bottom - elm.top);
+    let visibleHeight = Math.min(elm.bottom, viewHeight) - Math.max(elm.top, 0);
+    return visibleHeight > elementHeight / 2;
   }
 
   /*
@@ -85,6 +88,9 @@
     </li>
     <li class="nav-item mx-lg-3">
      <a class="page-scroll nav-link" id="nav-link-facilities" href="{{'#facilities' | relative_url }}" onclick="onClick(event);">Facilities</a>
+    </li>
+      <li class="nav-item mx-lg-3">
+     <a class="page-scroll nav-link" id="nav-link-partners" href="{{'#partners' | relative_url }}" onclick="onClick(event);">Industry Partners</a>
     </li>
     <li class="nav-item mx-lg-3">
      <a class="page-scroll nav-link" id="nav-link-team" href="{{'#team' | relative_url }}" onclick="onClick(event);">Team</a>

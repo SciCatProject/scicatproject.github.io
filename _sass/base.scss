@@ -67,7 +67,13 @@ div.container {
 .section-breaker {
   background-color: #041526;
   opacity: 0.9;
-  height: 0.3rem !important;
+  height: 0.2rem !important;
+}
+
+.secondary-breaker {
+  background-color: #0415263b;
+  opacity: 0.9;
+  height: 0.1rem !important;
 }
 
 .show-all-button {
@@ -107,13 +113,13 @@ div.container {
   .navbar-menu {
     padding-left: 120px;
     padding-right: 120px;
-  }
 
-  @media (max-width: 1300px) {
-    .navbar-menu {
+    @media (max-width: 1360px) {
       padding: 5px 20px;
     }
-  
+  }
+
+  @media (max-width: 1360px) {
     li {
       text-align: center;
     }
@@ -278,6 +284,17 @@ header.masthead:before {
       cursor: pointer;
       color: #27aae1;
     }
+  }
+}
+
+// ========= Industry Partners =========
+
+.partner {
+  width: 400px;
+  min-height: 180px;
+
+  .partner-logo {
+    height: 150px;
   }
 }
 

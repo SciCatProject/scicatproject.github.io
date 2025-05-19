@@ -105,6 +105,12 @@ facilities:
         email: o.knodel@hzdr.de
 
 
+partners:
+  - name: DECTRIS CLOUD
+    image: /assets/images/partners/dectris_cloud.svg
+    url: https://www.dectris.cloud/
+
+
 team:
   leaders:
     - name: Max Novelli
@@ -128,7 +134,7 @@ team:
       role: ScicatLive Leader
       url: https://github.com/minottic
     - name: Despina Adamopoulou 
-      company: EMPA Material Science and Technology
+      company: EMPA Materials Science and Technology
       role: Website Leader
       url: https://github.com/despadam
     - name: Open Position
