@@ -45,8 +45,8 @@ facilities:
     image: /assets/images/facilities/ess_logo.png
     url: https://www.ess.eu
     contacts:
-      - name: Max Novelli
-        email: max.novelli@ess.eu
+      - name: Fredrik Eriksson
+        email: fredrik.eriksson@ess.eu
   - name: Paul Scherrer Institut
     image: /assets/images/facilities/psi_logo.svg
     url: https://www.psi.ch
@@ -103,6 +103,12 @@ facilities:
     contacts:
       - name: Oliver Knodel
         email: o.knodel@hzdr.de
+  - name: Institut Laue-Langevin
+    image: /assets/images/facilities/ill_logo.png
+    url: https://www.ill.eu/
+    contacts:
+      - name: Paolo Mutti
+        email: mutti@ill.fr
 
 
 partners:
