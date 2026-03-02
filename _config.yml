@@ -166,7 +166,7 @@ documentation:
   others:
     - name: User Guides
       description: Experience SciCat as a user.
-      url: https://scicatproject.github.io/documentation/
+      url: https://scicatproject.github.io/user-documentation/
     - name: Ingestor
       description: Ingesting Data into SciCat.
       url: https://github.com/SciCatProject/documentation/tree/master/Ingestor
@@ -175,7 +175,7 @@ documentation:
       url: https://github.com/SciCatProject/documentation/tree/master/Development
     - name: Operator
       description: The SciCat Data Catalogue Operator Guide.
-      url: https://github.com/SciCatProject/documentation/tree/master/Operator
+      url: https://github.com/scicatproject.github.io/user-documentation/main/operator-guide
 
 
 # Build settings
