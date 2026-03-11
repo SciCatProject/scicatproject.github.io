@@ -175,7 +175,7 @@ documentation:
       url: https://github.com/SciCatProject/documentation/tree/master/Development
     - name: Operator
       description: The SciCat Data Catalogue Operator Guide.
-      url: https://github.com/scicatproject.github.io/user-documentation/main/operator-guide
+      url: https://scicatproject.github.io/user-documentation/main/operator-guide
 
 
 # Build settings
