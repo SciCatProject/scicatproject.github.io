@@ -19,7 +19,7 @@ If you have ruby installed you can run jekyll locally:
 
 ```bash
 gem install bundler jekyll
- bundle exec jekyll serve
+bundle exec jekyll serve
 ```
 
 ## Running with docker
